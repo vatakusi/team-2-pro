@@ -1,0 +1,35 @@
+/* фон мобільне меню: #E17992
+фон хіро/картки: #FFB8CA 
+фон картки2: #F0D1A5
+фон картки 3: #C2E297
+шріфт н1/акцент: rgba(212, 20, 67, 1)
+дескріпт/часи роботи/свг/фон2 хіро: rgba(255, 165, 186, 1) (#FFA5BA) 
+акцент2/тайтл2/лапки: 
+rgba(255, 255, 255, 1)
+фон секцій основний: #E5E5E5;
+фон секцій2 ебаут/адвантаж/контактс/футер: rgba(255, 245, 246, 1)
+текст чорний: #000000;
+текст сірий: #907E82;
+фон цитати слайдер: background: rgba(250, 250, 250, 1);
+
+
+
+*/
+
+:root {
+  --akcent-red-title: rgba(212, 20, 67, 1);
+  --akcent2-light-title: rgba(255, 255, 255, 1);
+  --bgc-mob-menu: #e17992;
+  --bgc-hero-cart1: #ffb8ca;
+  --bgc-cart2: #f0d1a5;
+  --bgc-cart3: #c2e297;
+  --bgc-circle-hiro2: #ffa5ba;
+  --bgc-sections1: #e5e5e5;
+  --bgc-sections2: rgba(255, 245, 246, 1);
+  --bgc-quote-slider: rgba(250, 250, 250, 1);
+
+  --text-black-color: rgba(0, 0, 0, 1);
+  --text-grey-color: #907e82;
+  --main-font: “DM sans”, sans serif;
+  --title-font: “Titan On”, cursive;
+}
