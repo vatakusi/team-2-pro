@@ -12,8 +12,6 @@ rgba(255, 255, 255, 1)
 текст сірий: #907E82;
 фон цитати слайдер: background: rgba(250, 250, 250, 1);
 
-
-
 */
 
 :root {
@@ -30,6 +28,6 @@ rgba(255, 255, 255, 1)
 
   --text-black-color: rgba(0, 0, 0, 1);
   --text-grey-color: #907e82;
-  --main-font: “DM sans”, sans serif;
-  --title-font: “Titan On”, cursive;
+  --main-font: 'DM sans', sans serif;
+  --title-font: 'Titan On', cursive;
 }

@@ -1,2 +1,15 @@
+.footer {
+  background-color: var(--bgc-sections2);
 
+  &__descript {
+    text-align: left;
+    width: 232px;
+    margin-bottom: 17px;
+  }
 
+  &__title {
+    text-align: left;
+    width: 200px;
+    margin-bottom: 43px;
+  }
+}
