@@ -14,6 +14,7 @@
     }
 
     &__logo {
+        z-index: 15;
         @include mq(desktop) {
             margin-left: -70px;
         }
@@ -34,7 +35,7 @@
             background-color: var(--bgc-mob-menu);
             transform: translateX(100%);
             transition: transform 0.3s ease;
-    
+            z-index: 20;
             &.active {
                 transform: translateX(0);
             }
@@ -151,7 +152,7 @@
 		width: 21px;
 		height: 12px;
 		cursor: pointer;
-		z-index: 5;
+		z-index: 25;
 		span {
 			transition: all 0.3s ease 0s;
 			top: calc(50% - 1px);

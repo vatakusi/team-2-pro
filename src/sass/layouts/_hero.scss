@@ -1,4 +1,80 @@
 .hero {
+    position: relative;
     min-height: 502px;
+    padding-top: 193px;
     background-color: var(--bgc-hero-cart1);
+    overflow-x: hidden;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 83px;
+        right: -62px;
+        width: 346px;
+        height: 344px;
+
+        background-color: var(--bgc-circle-hiro2);
+        border-radius: 50%;
+    }
+
+    &__left {
+        position: relative;
+        z-index: 15;
+    }
+
+    &__pre {
+        width: 165px;
+
+        font-family: var(--title-font);
+        font-size: 26px;
+        line-height: 1.15;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: var(--akcent2-light-title);
+    }
+
+    &__title {
+        margin-bottom: 19px;
+
+        font-family: var(--title-font);
+        font-size: 48px;
+        line-height: 1;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: var(--akcent-red-title);
+    }
+
+    &__products,
+    &__made {
+        display: inline-flex;
+        align-items: center;
+        height: 24px;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        font-family: var(--main-font);
+        font-size: 8px;
+        line-height: 1.25;
+
+        border-radius: 20px;
+    }
+
+    &__products {
+        margin-right: 9px;
+        color: var(--akcent2-light-title);
+        background-color: var(--akcent-red-title);
+    }
+
+    &__made {
+        color: var(--akcent-red-title);
+        background-color: var(--akcent2-light-title);
+    }
+
+    &__middle {
+        position: absolute;
+        bottom: 0;
+        right: 32px;
+
+        z-index: 10;
+    }
 }
