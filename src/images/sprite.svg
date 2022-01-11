@@ -21,8 +21,8 @@
          </path>
       </symbol>
       <symbol id="arrov-right-1" viewBox="0 0 22 32">
-         <path fill="none" stroke="#e1e1e1" style="stroke:var(--color1, #e1e1e1)" stroke-linejoin="round"
-            stroke-linecap="round" stroke-width="6.4" d="M5.574 3.2 18.454 16 5.574 28.8" />
+         <path fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-width="6.4"
+            d="M5.574 3.2 18.454 16 5.574 28.8" />
       </symbol>
       <symbol id="quote-1" viewBox="0 0 43 32">
          <path fill="#e1e1e1" style="fill:var(--color1, #e1e1e1)"
