@@ -2,3 +2,7 @@ body {
   font-family: var(--main-font);
   color: var(--text-grey-color);
 }
+
+body.modal-open {
+  overflow: hidden;
+}
