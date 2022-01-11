@@ -11,11 +11,11 @@
   color: #d41443;
   font-size: 34px;
 
-  @media screen and (min-width: 768px) {
+  @include mq(tablet) {
     font-size: 48px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include mq(desktop) {
     font-size: 58px;
   }
 }
@@ -26,11 +26,11 @@
   margin-bottom: 15px;
   font-size: 18px;
   line-height: 1.16;
-  @media screen and (min-width: 768px) {
+  @include mq(tablet) {
     font-size: 26px;
     line-height: 1.16;
   }
-  @media screen and (min-width: 1200px) {
+  @include mq(desktop) {
     font-size: 30px;
     line-height: 1.13;
   }
@@ -53,7 +53,7 @@
       background-size: 100% auto;
     }
   }
-  @media screen and (min-width: 1200px) {
+  @include mq(desktop) {
     background-image: url(../images/about-images/desk-about-bg.png);
     background-repeat: no-repeat;
     background-position: center bottom;
@@ -73,13 +73,13 @@
 }
 
 .left-side {
-  @media screen and (min-width: 768px) {
+  @include mq(tablet) {
     width: calc(100% / 2 - 15px);
     padding-left: 17px;
   }
 }
 .about-container {
-  @media screen and (min-width: 768px) {
+  @include mq(tablet) {
     display: flex;
     justify-content: space-between;
     // align-items: flex-end;
@@ -88,7 +88,7 @@
 .section-title {
   margin-bottom: 50px;
 
-  @media screen and (min-width: 768px) {
+  @include mq(tablet) {
     margin-bottom: 100px;
   }
 
@@ -124,7 +124,7 @@
 .cow-img {
   display: block;
   margin: 26px 20px 46px;
-  @media screen and (min-width: 768px) {
+  @include mq(tablet) {
     margin: 0;
   }
 }
@@ -138,7 +138,7 @@
   padding-right: 47px;
   margin: 0 0 47px 0;
 
-  @media screen and(min-width:768px) {
+  @include mq(tablet) {
     // display: flex;
     // align-items: center;
     font-family: DM Sans;
@@ -164,7 +164,7 @@
   margin: 0 0 17px 0;
   padding-right: 36px;
 
-  @media screen and(min-width:768px) {
+  @include mq(tablet) {
     // display: flex;
     // justify-content: space-between;
     font-family: DM Sans;
@@ -178,7 +178,7 @@
   }
 }
 .right-side {
-  @media screen and (min-width: 768px) {
+  @include mq(tablet) {
     width: calc(100% / 2 - 15px);
   }
 }
