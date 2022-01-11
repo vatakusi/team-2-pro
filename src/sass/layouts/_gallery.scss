@@ -1,0 +1,33 @@
+.gallery {
+  padding: 48px 0px 40px 0px;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(180deg, var(--bgc-sections2) 43%, var(--akcent2-light-title) 43%);
+  @include mq(mobile) {
+    background: linear-gradient(
+      180deg,
+      var(--bgc-sections2) 45.5%,
+      var(--akcent2-light-title) 45.5%
+    );
+    padding: 70px 0px 61px 0px;
+    & img {
+      width: 480px;
+    }
+  }
+  @include mq(tablet) {
+    background: linear-gradient(
+      180deg,
+      var(--bgc-sections2) 44.3%,
+      var(--akcent2-light-title) 44.3%
+    );
+    & img {
+      width: 786px;
+    }
+  }
+  @include mq(desktop) {
+    background: linear-gradient(180deg, var(--bgc-sections2) 43%, var(--akcent2-light-title) 43%);
+    & img {
+      width: 1280px;
+    }
+  }
+}
