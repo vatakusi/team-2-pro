@@ -1,0 +1,62 @@
+<section class="about">
+  <div class="container">
+    <h2 class="title section-title" id="made">
+      <span class="section-title-label">tradition and love </span>
+      how it's made?
+    </h2>
+    <div class="about-container">
+      <div class="left-side">
+        <picture class="cow-img">
+          <source
+            srcset="
+              ./images/about-images/desk-about-cow.png   1x,
+              ./images/about-images/desk-about-cow2x.png 2x
+            "
+            media="(min-width: 1200px)"
+            type="image/png"
+          />
+
+          <source
+            srcset="
+              ./images/about-images/tablet-about-cow.png   1x,
+              ./images/about-images/tablet-about-cow2x.png 2x
+            "
+            media="(min-width: 768px)"
+            type="image/png"
+          />
+
+          <source
+            srcset="
+              ./images/about-images/mobile-about-cow.png   1x,
+              ./images/about-images/mobile-about-cow2x.png 2x
+            "
+            media="(max-width: 767px)"
+            type="image/png"
+          />
+
+          <img src="./images/about-images/mobile-about-cow.png" alt="Cow" />
+        </picture>
+      </div>
+
+      <div class="right-side">
+        <p class="about-text">
+          Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
+          lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
+        </p>
+        <div class="about-bg">
+          <p class="about-text-second">
+            Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus
+            orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat
+            urna maximus. Cras massa nibh, tincidunt. Aliquam erat volutpat. Aenean accumsan.
+          </p>
+        </div>
+        <button class="about-button" type="button">
+          Read more
+          <!-- <svg class="arrow-icon">
+            <use class="arrow-icon" href="./images/svg/sprite.svg#icon-arrow-btn"></use>
+          </svg> -->
+        </button>
+      </div>
+    </div>
+  </div>
+</section>

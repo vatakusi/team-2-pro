@@ -1,0 +1,184 @@
+.title {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.section-title {
+  text-align: center;
+  text-transform: uppercase;
+  color: #d41443;
+  font-size: 34px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
+  }
+}
+
+.section-title-label {
+  display: block;
+  color: #ffa5ba;
+  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 1.16;
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.16;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+    line-height: 1.13;
+  }
+}
+.about {
+  background-color: #fff5f6;
+  padding-bottom: 39px;
+  padding-top: 125px;
+
+  @media screen and (max-width: 767px) {
+    background-image: url(../images/about-images/mobile-about-bg.png);
+    background-repeat: no-repeat;
+    background-position: center bottom 200px;
+    background-size: 100% auto;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/about-images/mobile-about-bg2x.png);
+      background-repeat: no-repeat;
+      background-position: center bottom 200px;
+      background-size: 100% auto;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/about-images/desk-about-bg.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 100% auto;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/about-images/desk-about-bg2x.png);
+      background-repeat: no-repeat;
+      background-position: center bottom 50px;
+      background-size: 100% auto;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    background-image: none;
+  }
+}
+
+.left-side {
+  @media screen and (min-width: 768px) {
+    width: calc(100% / 2 - 15px);
+    padding-left: 17px;
+  }
+}
+.about-container {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    // align-items: flex-end;
+  }
+}
+.section-title {
+  margin-bottom: 50px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 100px;
+  }
+
+  margin-bottom: 106px;
+}
+
+.about-button {
+  background: #ffffff;
+  border-radius: 22px;
+  border: none;
+  padding: 19px 38px 17px 36px;
+  align-items: center;
+  margin: 0;
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.28;
+  color: #d41443;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+.arrow-icon {
+  stroke: #d41443;
+  margin-left: 14px;
+  width: 4px;
+  height: 8px;
+}
+.about-button:hover,
+.about-button:focus {
+  background-color: #ecebeb;
+}
+
+.cow-img {
+  display: block;
+  margin: 26px 20px 46px;
+  @media screen and (min-width: 768px) {
+    margin: 0;
+  }
+}
+.about-text {
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.75;
+  letter-spacing: 0.04em;
+  color: #000000;
+  padding-right: 47px;
+  margin: 0 0 47px 0;
+
+  @media screen and(min-width:768px) {
+    // display: flex;
+    // align-items: center;
+    font-family: DM Sans;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.76;
+    color: #000000;
+    // width: 100%;
+    padding-right: 36px;
+    margin: 0 0 49px 0;
+  }
+}
+
+.about-text-second {
+  //   display: flex;
+  //   align-items: center;
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+  color: #907e82;
+
+  margin: 0 0 17px 0;
+  padding-right: 36px;
+
+  @media screen and(min-width:768px) {
+    // display: flex;
+    // justify-content: space-between;
+    font-family: DM Sans;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.76;
+    letter-spacing: 0.04em;
+    color: #907e82;
+    margin: 0 0 62px 0;
+    padding-right: 36px;
+  }
+}
+.right-side {
+  @media screen and (min-width: 768px) {
+    width: calc(100% / 2 - 15px);
+  }
+}
