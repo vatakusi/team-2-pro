@@ -1,12 +1,14 @@
 .container {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: 0 auto;
   width: 100%;
   outline: 1px solid green;
 
   @include mq(mobile) {
-    width: 310px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 440px;
   }
 
   @include mq(tablet) {
