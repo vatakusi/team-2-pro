@@ -41,16 +41,21 @@
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/about-images/mobile-about-bg2x.png);
-      background-repeat: no-repeat;
+      /* background-repeat: no-repeat;
       background-position: center bottom 200px;
-      background-size: 100% auto;
+      background-size: 100% auto; */
     }
   }
-  @media screen and (min-width: 1200px) {
+
+  @include mq(tablet) {
+    background-image: none;
+  }
+
+  @include mq(desktop) /* @media screen and (min-width: 1200px) */ {
     background-image: url(../images/about-images/desk-about-bg.png);
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    background-size: 100% auto;
+    /* background-repeat: no-repeat;
+    background-position: center bottom 200px;
+    background-size: 100% auto; */
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/about-images/desk-about-bg2x.png);
@@ -58,10 +63,6 @@
       background-position: center bottom 50px;
       background-size: 100% auto;
     }
-  }
-
-  @include mq(tablet) {
-    background-image: none;
   }
 
   @include mq(desktop) {
