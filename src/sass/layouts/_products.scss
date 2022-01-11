@@ -2,6 +2,15 @@
 .products {
   padding-top: 121px;
   padding-bottom: 98px;
+
+  @include mq(tablet) {
+    padding-bottom: 112px;
+  }
+
+  @include mq(desktop) {
+    padding-top: 127px;
+    padding-bottom: 119px;
+  }
 }
 
 .products__pre-title {
@@ -15,6 +24,16 @@
   text-transform: uppercase;
 
   color: #ffa5ba;
+
+  @include mq(tablet) {
+    @include font(26px, 1.15, 400);
+  }
+
+  @include mq(desktop) {
+    @include font(30px, 1.13, 400);
+
+    letter-spacing: 0.04em;
+  }
 }
 
 .products__title {
@@ -29,22 +48,62 @@
   text-transform: uppercase;
 
   color: #d41443;
+
+  @include mq(tablet) {
+    @include font(48px, 1.15, 400);
+
+    margin-bottom: 150px;
+  }
+
+  @include mq(desktop) {
+    @include font(58px, 1.14, 400);
+
+    margin-bottom: 259px;
+    letter-spacing: 0.06em;
+  }
+}
+
+.products__list {
+  @include mq(tablet) {
+    display: flex;
+    justify-content: center;
+    margin: -10px;
+  }
 }
 
 .products__item {
   padding-top: 161px;
-  padding-bottom: 41px;
+  padding-bottom: 40px;
 
   text-align: center;
   border-radius: 24px;
-  // width: 280px;
+
   max-width: 100%;
-  // min-height: 598px;
+
+  @include mq(tablet) {
+    margin: 10px;
+    max-width: 220px;
+
+    padding-top: 152px;
+    padding-bottom: 40px;
+
+    flex-basis: calc(100% / 3-20);
+  }
+
+  @include mq(desktop) {
+    max-width: 330px;
+
+    padding-top: 163px;
+    padding-bottom: 50px;
+  }
 }
 
 .products__item--first {
   position: relative;
-  margin-bottom: 130px;
+
+  @include mq(mobile-only) {
+    margin-bottom: 130px;
+  }
 
   background-color: #ffb8ca;
 
@@ -56,15 +115,30 @@
 
     content: '';
     display: block;
-    min-width: 249px;
+    max-width: 249px;
     height: 252px;
 
     background-image: url('../images/products/home-pic1.png');
+
+    @include mq(tablet) {
+      // max-width: 220px;
+
+      // transform: translateY(-47%);
+    }
+
+    @include mq(desktop) {
+      // max-width: 335px;
+
+      // transform: translateY(-67%);
+    }
   }
 }
 .products__item--second {
   position: relative;
-  margin-bottom: 130px;
+
+  @include mq(mobile-only) {
+    margin-bottom: 130px;
+  }
 
   background-color: #f0d1a5;
 
@@ -130,6 +204,12 @@
 
     background-image: url('../images/products/group-4.png');
   }
+
+  @include mq(desktop) {
+    @include font(30px, 1.13, 400);
+
+    margin-bottom: 70px;
+  }
 }
 .products__text {
   margin-bottom: 30px;
@@ -145,6 +225,18 @@
   letter-spacing: 0.04em;
 
   color: #ffffff;
+
+  @include mq(tablet) {
+    @include font(14px, 1.78, 400);
+
+    margin-bottom: 40px;
+  }
+
+  @include mq(desktop) {
+    @include font(16px, 1.75, 400);
+
+    margin-bottom: 62px;
+  }
 }
 
 .products__check {
