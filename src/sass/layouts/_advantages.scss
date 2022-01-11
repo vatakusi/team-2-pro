@@ -34,14 +34,14 @@
   @media screen and (min-width: 468px) {
     //
   }
-  @media screen and (min-width: 768px) {
+  @include mq(tablet) {
     width: calc((100% - 120px) / 3);
     & + & {
       margin-left: 60px;
       margin-top: 0;
     }
   }
-  @media screen and(min-width: 1280px) {
+  @include mq(desktop) {
     width: calc((100% - 2 * 30px) / 3);
   }
 }
@@ -53,13 +53,13 @@
   text-transform: uppercase;
   color: #d41443;
   margin-bottom: 16px;
-  @media screen and (min-width: 768px) {
+  @include mq(tablet) {
     text-transform: none;
     font-size: 48px;
     line-height: 1.15;
     margin-bottom: 13px;
   }
-  @media screen and (min-width: 1280px) {
+  @include mq(desktop) {
     font-size: 58px;
     margin-bottom: 15px;
   }
@@ -70,11 +70,11 @@
   font-size: 12px;
   line-height: 1.7;
   color: #000000;
-  @media screen and (min-width: 768px) {
+  @include mq(tablet) {
     font-size: 14px;
     line-height: 1.76;
   }
-  @media screen and (min-width: 1280px) {
+  @include mq(desktop) {
     font-size: 16px;
     line-height: 1.76;
   }
@@ -87,10 +87,10 @@
   width: 33px;
   height: 50px;
   margin-bottom: 16px;
-  @media screen and (min-width: 768px) {
+  @include mq(tablet) {
     margin-bottom: 36px;
   }
-  @media screen and (min: width 1280px) {
+  @include mq(desktop) {
     margin-bottom: 40px;
   }
 }
@@ -102,10 +102,10 @@
   width: 50px;
   height: 50px;
   margin-bottom: 16px;
-  @media screen and (min-width: 768px) {
+  @include mq(tablet) {
     margin-bottom: 36px;
   }
-  @media screen and (min: width 1280px) {
+  @include mq(desktop) {
     margin-bottom: 40px;
   }
 }
@@ -117,10 +117,10 @@
   width: 44px;
   height: 50px;
   margin-bottom: 16px;
-  @media screen and (min-width: 768px) {
+  @include mq(tablet) {
     margin-bottom: 36px;
   }
-  @media screen and (min-width: 1280px) {
+  @include mq(desktop) {
     margin-bottom: 40px;
   }
 }
