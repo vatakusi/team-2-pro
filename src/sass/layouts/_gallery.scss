@@ -2,17 +2,17 @@
   display: flex;
   justify-content: center;
   background: linear-gradient(180deg, var(--bgc-sections2) 40%, var(--akcent2-light-title) 40%);
-  @media screen and (min-width: 480px) {
+  @include mq(mobile) {
     & img {
       width: 480px;
     }
   }
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
+  @include mq(tablet) {
     & img {
       width: 786px;
     }
   }
-  @media screen and (min-width: 1280px) {
+  @include mq(desktop) {
     & img {
       width: 1280px;
     }
