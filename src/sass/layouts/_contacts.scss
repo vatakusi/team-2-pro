@@ -2,19 +2,19 @@
     background-color: var(--bgc-sections2);
     margin-top: 102px;
 
-    @media screen and (min-width: 1200px) {
+    @include mq(desktop) {
     background-image: url(../images/contacts-fon-images/sectionbg21@1x.png);
     background-repeat: no-repeat;
     background-size: 100% auto;
 
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    @include mq(retina) {
         background-image: url(../images/contacts-fon-images/sectionbg21@2x.png);
         background-repeat: no-repeat;
         background-size: 100% auto;
     }
 }
 
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+@include mq(tablet-only) {
     background-image: none;
 }
 }
@@ -25,24 +25,27 @@
     padding-top: 43px;
     padding-left: 20px;
     padding-bottom: 43px;
+    padding-right: 21px;
     background-color: #ffffff;
     
     
     @include mq (mobile-only) {
         &:first-child{
-        margin-top: -92px;
+        margin-top: -84px;
         }
     }
     @include mq (tablet) {
         padding-top: 50px;
         padding-left: 31px;
         padding-bottom: 50px;
-        margin-top: -102px;
+        padding-right: 32px;
+        margin-top: -78px;
     }
     @include mq (desktop) {
         padding-top: 52px;
         padding-left: 43px;
         padding-bottom: 52px;
+        padding-right: 43px;
         margin-top: -102px;
     }
     
@@ -53,11 +56,15 @@
     border-radius: 6px;
     color: #FFFFFF;
     width: 73px;
-    height: 28px;
+    height: 16px;
     position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.33;
+
 
     &::after {
         content: "";
@@ -69,7 +76,7 @@
         border: 1px solid #E1E1E1;
         position: absolute;
         left: 0px;
-        bottom: -35px;
+        bottom: -112px;
         cursor: default;
     }
 
@@ -83,13 +90,17 @@
         border: 1px solid #E1E1E1;
         position: absolute;
         left: 0px;
-        bottom: -175px;
+        bottom: -265px;
         cursor: default;
     }
     @include mq (mobile) {
-
+        
     }
     @include mq (tablet) {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.33;
+        height: 28px;
         &::after {
             content: "";
             width: 157px;
@@ -100,7 +111,7 @@
             border: 1px solid #E1E1E1;
             position: absolute;
             left: 0px;
-            bottom: -159px;
+            bottom: -151px;
             cursor: default;
         }
     
@@ -114,22 +125,23 @@
             border: 1px solid #E1E1E1;
             position: absolute;
             left: 0px;
-            bottom: -330px;
+            bottom: -335px;
             cursor: default;
         }
     }
     @include mq (desktop) {
+        height: 28px;
         &::after {
             content: "";
             width: 234px;
             // max-width: 100%;
-            height: 0px;
+            height: px;
             background-color: #E1E1E1;
             border-radius: 2px;
             border: 1px solid #E1E1E1;
             position: absolute;
             left: 0px;
-            bottom: -139px;
+            bottom: -147px;
             cursor: default;
         }
     
@@ -155,11 +167,14 @@
     border-radius: 6px;
     color: #FFFFFF;
     width: 130px;
-    height: 28px;
+    height: 16px;
     position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.33;
 
     &::after {
         content: "";
@@ -171,7 +186,7 @@
         border: 1px solid #E1E1E1;
         position: absolute;
         left: 0px;
-        bottom: -35px;
+        bottom: -112px;
         cursor: default;
     }
 
@@ -185,13 +200,17 @@
         border: 1px solid #E1E1E1;
         position: absolute;
         left: 0px;
-        bottom: -175px;
+        bottom: -265px;
         cursor: default;
     }
     @include mq (mobile) {
-
+        
     }
     @include mq (tablet) {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.33;
+        height: 28px;
         &::after {
             content: "";
             width: 157px;
@@ -202,7 +221,7 @@
             border: 1px solid #E1E1E1;
             position: absolute;
             left: 0px;
-            bottom: -159px;
+            bottom: -151px;
             cursor: default;
         }
     
@@ -221,6 +240,7 @@
         }
     }
     @include mq (desktop) {
+        height: 28px;
         &::after {
             content: "";
             width: 234px;
@@ -231,7 +251,7 @@
             border: 1px solid #E1E1E1;
             position: absolute;
             left: 0px;
-            bottom: -139px;
+            bottom: -147px;
             cursor: default;
         }
     
@@ -245,7 +265,7 @@
             border: 1px solid #E1E1E1;
             position: absolute;
             left: 0px;
-            bottom: -330px;
+            bottom: -335px;
             cursor: default;
         }
     }
@@ -255,18 +275,26 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 34px;
 
     @include mq (mobile-only) {
         
     }
     @include mq (tablet) {
         flex-wrap: nowrap;
+        margin-bottom: 81px;
     }
     @include mq (desktop) {
         flex-wrap: nowrap;
-        
+        margin-bottom: 86px;
     }
 }
+
+// .contacts__card-list:last-child{
+//     @include mq (mobile-only) {
+//         margin-bottom: 54px;
+//     }
+// }
 
 .contacts__card-list {
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
@@ -366,19 +394,28 @@
     }
 }
 .contacts__card-adress {
-    margin-top: 64px;
+    margin-top: 23px;
     padding-bottom: 10px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.33;
     font-family: var(--main-font);
     color: var(--text-black-color);
     
     @include mq (mobile-only) {
-        padding-top: 25px;
+        padding-top: 23px;
     }
     @include mq (tablet) {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.33;
         margin-top: 32px;
         padding-top: 30px;
     }
     @include mq (desktop) {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.33;
         margin-top: 32px;
         padding-top: 32px;
         padding-bottom: 14px;
@@ -388,18 +425,25 @@
 
 .contacts__card-txt {
     padding-bottom: 50px;
-
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.33;
     
     @include mq (mobile) {
         
     }
     @include mq (tablet) {
         padding-bottom: 60px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.33;
     }
     @include mq (desktop) {
         max-width: 243px;
         padding-bottom: 64px;
-    
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.33;
     }
     
 }
@@ -418,40 +462,64 @@
     font-size: 12px;
     width: 121px;
     height: 22px;   
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.33;
     font-family: var(--main-font);
     color: var(--text-black-color);
     @include mq (tablet) {
+        font-weight: 500;
         font-size: 14px;
+        line-height: 1.33;
         width: 141px;
         height: 26px;
     }
     @include mq (desktop) {
+        font-weight: 500;
         font-size: 16px;
+        line-height: 1.33;
         width: 152px;
         height: 30px;
     }
 }
 
 .contacts__card-time{
-    width: 161.9px;
+    width: 163px;
     height: 23px;
     font-size: 12px;
     color: #FFA5BA;
     margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.33;
 
     @include mq (tablet) {
         margin-bottom: 16px;
+        font-size: 14px;
     }
     @include mq (desktop) {
         margin-bottom: 15px;
+        font-size: 16px;
     }
 }
 
 .contacts__card-tlml {
-    width: 179px;
-    height: 37px;
+    
     font-family: var(--main-font);
     color: var(--text-grey-color);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.33;
+    margin-bottom: 8px;
+
+    @include mq (tablet) {
+        margin-bottom: 8px;
+        font-size: 14px;
+    }
+    @include mq (desktop) {
+        margin-bottom: 8px;
+        font-size: 16px;
+    }
 }
 
 .contacts__card-btn-onesvg{
@@ -482,7 +550,6 @@
     display: block;
     text-align: center;
     margin: 0 auto;
-    margin-top: 54px;
     width: 164px;
     margin-bottom: 113px;
 
@@ -509,6 +576,7 @@
     font-size: 12px;
     width: 179px;
     height: 37px;
+    display: grid;
 
 
     @include mq (tablet) {
@@ -522,3 +590,5 @@
         font-size: 16px;
     }
 }
+
+
