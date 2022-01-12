@@ -10,16 +10,16 @@
   --color-paragraph: rgba(0, 0, 0, 0.8);
   --color-accent: hsl(210, 100%, 39%);
   --color-accent-bright: hsl(210, 100%, 49%);
-  --color-accent-alpha: hsla(210, 100%, 39%, 0.4);
+  --color-accent-alpha: hsla(330, 100%, 39%, 0.2);
   --color-img-shadow: rgba(0, 0, 0, 0.2);
 }
 
 #back-to-top {
   place-self: end;
   position: sticky;
-  margin-top: calc(-42vh + var(--back-to-top-offset));
+  margin-top: -100px /* calc(-42vh + var(--back-to-top-offset)) */;
   bottom: 2.7em;
-  right: 2em;
+  right: 1em;
 }
 
 .bttop {
@@ -41,14 +41,13 @@
 
   text-decoration: none;
   background-color: var(--bgc-soc-icons);
-  box-shadow: 0 0.6em 1em 0.2em var(--color-accent-alpha);
+  box-shadow: 0 0.15em 0.31em 0.2em var(--color-accent-alpha);
   transform: translateY(0%);
   transition: ease-out 200ms;
   transition-property: transform, background-color;
 }
 
 #back-to-top:hover {
-  transform: translateY(-22%);
   background-color: var(--bgc-soc-icons);
 }
 
