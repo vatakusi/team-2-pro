@@ -1,16 +1,57 @@
+.foot {
+  background-color: var(--bgc-sections2);
+}
+
 .footer {
   background-color: var(--bgc-sections2);
+
+  @include mq(tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__wrap-titles {
+    @include mq(tablet) {
+      height: 281px;
+    }
+
+    @include mq(desktop) {
+      height: 210px;
+    }
+  }
 
   &__descript {
     text-align: left;
     width: 232px;
     margin-bottom: 17px;
+
+    @include mq(tablet) {
+      width: 340px;
+      @include font(26px, 1.15, 400);
+    }
+
+    @include mq(desktop) {
+      width: 480px;
+      @include font(30px, 1.13, 400);
+    }
   }
 
   &__title {
     text-align: left;
     width: 200px;
     margin-bottom: 43px;
+
+    @include mq(tablet) {
+      margin-bottom: 0;
+      width: 340px;
+      @include font(48px, 1.14, 400);
+    }
+
+    @include mq(desktop) {
+      margin-bottom: 0;
+      width: 480px;
+      @include font(58px, 1.138, 400);
+    }
   }
 
   &__list-icon {
@@ -28,6 +69,11 @@
     border-radius: 50%;
 
     background-color: var(--bgc-soc-icons);
+
+    @include mq(tablet) {
+      width: 34px;
+      height: 34px;
+    }
 
     &:not(:last-child) {
       margin-right: 24px;
@@ -51,11 +97,20 @@
   }
 
   &__text {
+    margin-bottom: 46px;
     text-align: right;
     font-weight: bold;
     font-size: 12px;
     line-height: 1.86;
     color: var(--text-black-color);
+
+    @include mq(tablet) {
+      @include font(14px, 1.86, 700);
+    }
+
+    @include mq(desktop) {
+      @include font(16px, 1.86, 700);
+    }
 
     &-call-num {
       color: var(--akcent-red-title);
@@ -63,6 +118,26 @@
   }
 
   &__end {
+    padding-top: 22px;
     border-top: 1px solid #e1e1e1;
+
+    @include mq(tablet) {
+      padding-top: 30px;
+    }
+
+    &-text {
+      margin: auto;
+      text-align: center;
+      padding-bottom: 25px;
+      width: 150px;
+      color: var(--text-grey-color);
+      @include font(14px, 1.52, 700);
+
+      @include mq(tablet) {
+        padding-bottom: 18px;
+        width: 276px;
+        @include font(14px, 1.86, 700);
+      }
+    }
   }
 }
