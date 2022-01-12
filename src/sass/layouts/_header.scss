@@ -129,6 +129,7 @@
 
             color: var(--akcent-red-title);
             background-color: var(--akcent2-light-title);
+            z-index: 15;
         }
 
         @include mq(desktop) {
