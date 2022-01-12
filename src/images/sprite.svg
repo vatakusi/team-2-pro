@@ -45,5 +45,9 @@
          <path fill="#fff" style="fill:var(--color2, #fff)"
             d="m16.206 20.75-.636 8.34c.908 0 1.302-.366 1.774-.802l4.26-3.8 8.83 6.034c1.62.84 2.76.398 3.196-1.39l5.796-25.346h.002c.514-2.236-.866-3.108-2.444-2.56L2.92 13.398c-2.324.84-2.29 2.052-.396 2.6l8.71 2.528 20.23-11.814c.952-.588 1.816-.264 1.104.326L16.206 20.75z" />
       </symbol>
+
+      <symbol id="icon-Vector-1" viewBox="0 0 22 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4.5" stroke-width="8" d="M4.488 3.2l13.7 12.8-13.7 12.8"></path>
+</symbol>
    </defs>
 </svg>

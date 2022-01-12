@@ -1,0 +1,524 @@
+.contacts{
+    background-color: var(--bgc-sections2);
+    margin-top: 102px;
+
+    @media screen and (min-width: 1200px) {
+    background-image: url(../images/contacts-fon-images/sectionbg21@1x.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/contacts-fon-images/sectionbg21@2x.png);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+    }
+}
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    background-image: none;
+}
+}
+
+
+
+.contacts__card-list {
+    padding-top: 43px;
+    padding-left: 20px;
+    padding-bottom: 43px;
+    background-color: #ffffff;
+    
+    
+    @include mq (mobile-only) {
+        &:first-child{
+        margin-top: -92px;
+        }
+    }
+    @include mq (tablet) {
+        padding-top: 50px;
+        padding-left: 31px;
+        padding-bottom: 50px;
+        margin-top: -102px;
+    }
+    @include mq (desktop) {
+        padding-top: 52px;
+        padding-left: 43px;
+        padding-bottom: 52px;
+        margin-top: -102px;
+    }
+    
+}
+
+.contacts__card-name{
+    background: #F0D1A5;
+    border-radius: 6px;
+    color: #FFFFFF;
+    width: 73px;
+    height: 28px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::after {
+        content: "";
+        width: 179px;
+        // max-width: 100%;
+        height: 0px;
+        background-color: #E1E1E1;
+        border-radius: 2px;
+        border: 1px solid #E1E1E1;
+        position: absolute;
+        left: 0px;
+        bottom: -35px;
+        cursor: default;
+    }
+
+    &::before{
+        content: "";
+        width: 179px;
+        // max-width: 100%;
+        height: 0px;
+        background-color: #E1E1E1;
+        border-radius: 2px;
+        border: 1px solid #E1E1E1;
+        position: absolute;
+        left: 0px;
+        bottom: -175px;
+        cursor: default;
+    }
+    @include mq (mobile) {
+
+    }
+    @include mq (tablet) {
+        &::after {
+            content: "";
+            width: 157px;
+            // max-width: 100%;
+            height: 0px;
+            background-color: #E1E1E1;
+            border-radius: 2px;
+            border: 1px solid #E1E1E1;
+            position: absolute;
+            left: 0px;
+            bottom: -159px;
+            cursor: default;
+        }
+    
+        &::before{
+            content: "";
+            width: 157px;
+            // max-width: 100%;
+            height: 0px;
+            background-color: #E1E1E1;
+            border-radius: 2px;
+            border: 1px solid #E1E1E1;
+            position: absolute;
+            left: 0px;
+            bottom: -330px;
+            cursor: default;
+        }
+    }
+    @include mq (desktop) {
+        &::after {
+            content: "";
+            width: 234px;
+            // max-width: 100%;
+            height: 0px;
+            background-color: #E1E1E1;
+            border-radius: 2px;
+            border: 1px solid #E1E1E1;
+            position: absolute;
+            left: 0px;
+            bottom: -139px;
+            cursor: default;
+        }
+    
+        &::before{
+            content: "";
+            width: 234px;
+            // max-width: 100%;
+            height: 0px;
+            background-color: #E1E1E1;
+            border-radius: 2px;
+            border: 1px solid #E1E1E1;
+            position: absolute;
+            left: 0px;
+            bottom: -330px;
+            cursor: default;
+        }
+    }
+}
+
+
+.contacts__card-namefood{
+    background: #C2E297;
+    border-radius: 6px;
+    color: #FFFFFF;
+    width: 130px;
+    height: 28px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::after {
+        content: "";
+        width: 179px;
+        // max-width: 100%;
+        height: 0px;
+        background-color: #E1E1E1;
+        border-radius: 2px;
+        border: 1px solid #E1E1E1;
+        position: absolute;
+        left: 0px;
+        bottom: -35px;
+        cursor: default;
+    }
+
+    &::before{
+        content: "";
+        width: 179px;
+        // max-width: 100%;
+        height: 0px;
+        background-color: #E1E1E1;
+        border-radius: 2px;
+        border: 1px solid #E1E1E1;
+        position: absolute;
+        left: 0px;
+        bottom: -175px;
+        cursor: default;
+    }
+    @include mq (mobile) {
+
+    }
+    @include mq (tablet) {
+        &::after {
+            content: "";
+            width: 157px;
+            // max-width: 100%;
+            height: 0px;
+            background-color: #E1E1E1;
+            border-radius: 2px;
+            border: 1px solid #E1E1E1;
+            position: absolute;
+            left: 0px;
+            bottom: -159px;
+            cursor: default;
+        }
+    
+        &::before{
+            content: "";
+            width: 157px;
+            // max-width: 100%;
+            height: 0px;
+            background-color: #E1E1E1;
+            border-radius: 2px;
+            border: 1px solid #E1E1E1;
+            position: absolute;
+            left: 0px;
+            bottom: -330px;
+            cursor: default;
+        }
+    }
+    @include mq (desktop) {
+        &::after {
+            content: "";
+            width: 234px;
+            // max-width: 100%;
+            height: 0px;
+            background-color: #E1E1E1;
+            border-radius: 2px;
+            border: 1px solid #E1E1E1;
+            position: absolute;
+            left: 0px;
+            bottom: -139px;
+            cursor: default;
+        }
+    
+        &::before{
+            content: "";
+            width: 234px;
+            // max-width: 100%;
+            height: 0px;
+            background-color: #E1E1E1;
+            border-radius: 2px;
+            border: 1px solid #E1E1E1;
+            position: absolute;
+            left: 0px;
+            bottom: -330px;
+            cursor: default;
+        }
+    }
+}
+
+.contacts__card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @include mq (mobile-only) {
+        
+    }
+    @include mq (tablet) {
+        flex-wrap: nowrap;
+    }
+    @include mq (desktop) {
+        flex-wrap: nowrap;
+        
+    }
+}
+
+.contacts__card-list {
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    width: 220px;
+
+    @include mq (mobile-only) {
+        display: block;
+        margin-bottom: 20px;
+    }
+    @include mq (tablet) {
+        flex-basis: calc((100% - 1 / 10px) / 3);
+    }
+    @include mq (desktop) {
+        width: 330px;
+        height: 572px;
+    }
+}
+
+.contacts__card-list:not(:last-child){
+    @include mq (mobile-only) {
+        margin-right: o auto;
+    }
+    @include mq (tablet) {
+        margin-right: 30px;
+    }
+    @include mq (desktop) {
+        margin-right: 30px;
+    }
+    
+}
+
+.contacts__card-btn{
+    display: inline-block;
+    
+    @include mq (mobile) {
+    
+    }
+    @include mq (tablet) {
+        
+    }
+    @include mq (desktop) {
+    
+    }
+
+
+
+
+}
+
+.contacts__card-btn-one {
+    background: #D41342;
+    color: #FFFFFF;
+    border-radius: 22px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.31;
+    align-items: center;
+    text-align: center; 
+    height: 44px;
+    margin-bottom: 10px;
+    border-color: transparent;
+
+    @include mq (mobile-only) {
+        width: 162px;
+    }
+    @include mq (tablet) {
+        width: 191px;
+    }
+    @include mq (desktop) {
+        width: 198px;
+    }
+}
+
+.contacts__card-btn-second {
+    background: #FFFFFF;
+    color: #D41342;
+    border-radius: 22px;
+    font-family: var(--main-font);
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.31;
+    align-items: center;
+    text-align: center;
+    height: 44px;
+    border-color: transparent;
+
+    @include mq (mobile-only) {
+        width: 162px;
+
+    }
+    @include mq (tablet) {
+        width: 174px;
+    }
+    @include mq (desktop) {
+        width: 180px;
+    }
+}
+.contacts__card-adress {
+    margin-top: 64px;
+    padding-bottom: 10px;
+    font-family: var(--main-font);
+    color: var(--text-black-color);
+    
+    @include mq (mobile-only) {
+        padding-top: 25px;
+    }
+    @include mq (tablet) {
+        margin-top: 32px;
+        padding-top: 30px;
+    }
+    @include mq (desktop) {
+        margin-top: 32px;
+        padding-top: 32px;
+        padding-bottom: 14px;
+    
+}
+}
+
+.contacts__card-txt {
+    padding-bottom: 50px;
+
+    
+    @include mq (mobile) {
+        
+    }
+    @include mq (tablet) {
+        padding-bottom: 60px;
+    }
+    @include mq (desktop) {
+        max-width: 243px;
+        padding-bottom: 64px;
+    
+    }
+    
+}
+
+.contacts__card-daytime {
+    padding-bottom: 50px;
+    @include mq (tablet) {
+        padding-bottom: 60px;
+    }
+    @include mq (desktop) {
+        padding-bottom: 64px;
+    }
+}
+
+.contacts__card-day{
+    font-size: 12px;
+    width: 121px;
+    height: 22px;   
+    font-family: var(--main-font);
+    color: var(--text-black-color);
+    @include mq (tablet) {
+        font-size: 14px;
+        width: 141px;
+        height: 26px;
+    }
+    @include mq (desktop) {
+        font-size: 16px;
+        width: 152px;
+        height: 30px;
+    }
+}
+
+.contacts__card-time{
+    width: 161.9px;
+    height: 23px;
+    font-size: 12px;
+    color: #FFA5BA;
+    margin-bottom: 10px;
+
+    @include mq (tablet) {
+        margin-bottom: 16px;
+    }
+    @include mq (desktop) {
+        margin-bottom: 15px;
+    }
+}
+
+.contacts__card-tlml {
+    width: 179px;
+    height: 37px;
+    font-family: var(--main-font);
+    color: var(--text-grey-color);
+}
+
+.contacts__card-btn-onesvg{
+    
+        display: inline-block;
+        stroke: #FFFFFF;
+        fill: #D41342;
+        margin-left: 8px;
+        @include mq (tablet) {
+        margin-left: 13.5px;
+    }
+}
+.contacts__card-btn-secondsvg{
+    
+    display: inline-block;
+    stroke: #D41342;
+    fill: #FFFFFF;
+    margin-left: 8px;
+    @include mq (tablet) {
+        margin-left: 13.5px;
+    }
+    @include mq (desktop) {
+        
+    }
+}
+
+.contacts__card-btns{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 54px;
+    width: 164px;
+    margin-bottom: 113px;
+
+    @include mq (tablet) {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 165px;
+    }
+    @include mq (desktop) {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 165px;
+    }
+}
+
+.contacts__card {
+    @include mq (desktop) {
+        
+    }
+}
+
+.contacts__card-cnt{
+    font-family: var(--main-font);
+    font-size: 12px;
+    width: 179px;
+    height: 37px;
+
+
+    @include mq (tablet) {
+        width: 157px;
+        height: 48px;
+        font-size: 14px;
+    }
+    @include mq (desktop) {
+        width: 243px;
+        height: 50px;
+        font-size: 16px;
+    }
+}
