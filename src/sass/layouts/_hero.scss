@@ -1,20 +1,30 @@
 .hero {
     position: relative;
-    min-height: 502px;
+    height: 502px;
     padding-top: 193px;
     background-color: var(--bgc-hero-cart1);
     overflow-x: hidden;
 
     @include mq(tablet) {
-        min-height: 399px;
+        height: 399px;
         padding-top: 102px;
     }
 
+    @include mq(desktop) {
+        height: 665px;
+        padding-top: 171px;
+    }
+
     &__flex {
+        height: 100%;
         @include mq(tablet) {
             position: relative;
             display: flex;
             justify-content: space-between;
+        }
+
+        @include mq(desktop) {
+            height: 100%;
         }
     }
 
@@ -32,10 +42,19 @@
                 align-items: flex-end;
                 margin-top: 19px;
             }
+
+            @include mq(desktop) {
+                margin-top: 56px;
+                margin-left: -40px;
+            }
         }
 
         &-img {
             flex-shrink: 0;
+
+            @include mq(desktop) {
+                margin-right: 30px;
+            }
         }
 
         &-text {
@@ -45,6 +64,11 @@
             font-size: 8px;
             line-height: 1.5;
             color: var(--akcent2-light-title);
+
+            @include mq(desktop) {
+                font-size: 14px;
+                flex-basis: 200px;
+            }
         }
 
         &-next {
@@ -67,6 +91,18 @@
             &:hover,
             &:focus {
                 background-color: #ECEBEB;
+            }
+
+            @include mq(desktop) {
+                width: 26px;
+                height: 26px;
+                margin-top: 20px;
+                align-items: center;
+
+                svg {
+                    width: 8px;
+                    height: 8px;
+                }
             }
         }
     }
@@ -102,6 +138,16 @@
                 font-size: 22px;
             }
         }
+
+        @include mq(desktop) {
+            width: 277px;
+            margin-bottom: 25px;
+            font-size: 58px;
+
+            span {
+                font-size: 38px;
+            }
+        }
     }
 
     &__products,
@@ -119,6 +165,11 @@
         border-radius: 20px;
 
         transition: background-color 250ms linear;
+
+        @include mq(desktop) {
+            height: 40px;
+            font-size: 14px;
+        }
     }
 
     &__products {
@@ -128,6 +179,10 @@
 
         &:hover {
             background-color: #C7133E;
+        }
+
+        @include mq(desktop) {
+            margin-right: 15px;
         }
     }
 
@@ -165,11 +220,21 @@
                 top: -32px;
                 left: -71px;
             }
+
+            @include mq(desktop) {
+                width: 538px;
+                height: 538px;
+                top: -56px;
+                left: -119px;
+            }
         }
 
         @include mq(tablet) {
-            bottom: -24px;
             left: 358px;
+        }
+
+        @include mq(desktop) {
+            left: 485px;
         }
     }
 
@@ -182,7 +247,7 @@
         &-img {
             position: absolute;
             right: 0;
-            bottom: -24px;
+            bottom: 0;
         }
     }
 
@@ -193,8 +258,16 @@
         align-items: flex-end;
         padding-right: 10px;
 
-        &:not(:last-child) {
-            margin-bottom: 13px;
+        &:not(:first-child) {
+            margin-top: 13px;
+
+            @include mq(desktop) {
+                margin-top: 15px;
+            }
+        }
+
+        @include mq(desktop) {
+            padding-right: 0;
         }
 
         &::after {
@@ -208,6 +281,12 @@
             background-color: var(--akcent2-light-title);
             border-radius: 50%;
             z-index: -1;
+
+            @include mq(desktop) {
+                width: 30px;
+                height: 30px;
+                right: -18px;
+            }
         }
 
         &-num {
@@ -218,6 +297,10 @@
             letter-spacing: 0.04em;
 
             color: var(--akcent-red-title);
+
+            @include mq(desktop) {
+                font-size: 46px;
+            }
         }
 
         &-text {
@@ -226,6 +309,10 @@
             line-height: 1.25;
 
             color: var(--akcent2-light-title);
+
+            @include mq(desktop) {
+                font-size: 14px;
+            }
         }
     }
 }

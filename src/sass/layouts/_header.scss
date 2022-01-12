@@ -7,6 +7,10 @@
         padding-top: 37px;
     }
 
+    @include mq(desktop) {
+        z-index: 15;
+    }
+
     &__nav {
         display: flex;
         justify-content: space-between;
