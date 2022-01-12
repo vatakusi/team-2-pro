@@ -87,7 +87,7 @@
     padding-top: 152px;
     padding-bottom: 120px;
 
-    flex-basis: calc(100% / 3-20);
+    flex-basis: calc(100% / 3 - 20px);
   }
 
   @include mq(desktop) {
