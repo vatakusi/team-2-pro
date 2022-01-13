@@ -1,10 +1,10 @@
 .customer {
-  padding: 40px 0px 43px 0px;
+  padding: 40px 0px 170px 0px;
   @include mq(tablet) {
-    padding: 61px 0px 60px 0px;
+    padding: 61px 0px 120px 0px;
   }
   @include mq(desktop) {
-    padding: 61px 0px 66px 0px;
+    padding: 61px 0px 130px 0px;
   }
 }
 .customer-list {
@@ -39,13 +39,18 @@
       rgba(225, 225, 225, 1) 32px
     );
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: 180px 239px;
+    /* background-position: center;
+    background-size: 180px 239px; */
 
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+
+    background-image: url(/images/customer/quote.svg);
+    background-position: 61px 28px;
+    background-size: 55px auto;
+
     @include mq(mobile) {
       padding: 45px 68px 30px 73px;
       margin-bottom: 47px;
@@ -55,7 +60,8 @@
     @include mq(tablet) {
       padding: 47px 80px 34px 80px;
       @include font(14px, 2.16, 500);
-      background-size: 524px 69px;
+      /* background-size: 524px 69px; */
+      background-size: 55px auto;
       max-width: 620px;
 
       margin-bottom: 42px;
@@ -63,14 +69,15 @@
     @include mq(desktop) {
       padding: 47px 89px 39px 87px;
       @include font(16px, 1.86, 500);
-      background-size: 813px 69px;
+      /* background-size: 813px 69px; */
+      background-size: 55px auto;
       max-width: 926px;
 
       margin-bottom: 34px;
     }
-    &::before {
+    &::after/* before */ {
       content: '';
-      background-image: url(/images/customer/quote.svg);
+      /* background-image: url(/images/customer/quote.svg); */
       background-repeat: no-repeat;
       position: absolute;
       height: 40px;
@@ -93,7 +100,7 @@
         left: 122px;
       }
     }
-    &::after {
+    &::before/* after */ {
       content: '...';
       position: absolute;
       color: #c7133e;
