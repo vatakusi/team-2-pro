@@ -138,9 +138,13 @@
 
       transform: translate(-50%, -65%);
     }
+
+    @include mq(retina) {
+      background-image: url('../images/products/home-pic1@2x.png');
+    }
   }
   &:hover::before {
-    transform: translate(-50%, -50%) scale(1.2);
+    transform: translate(-50%, -50%) scale(1.1);
   }
 }
 .products__item--second {
@@ -183,9 +187,13 @@
 
       transform: translate(-50%, -65%);
     }
+
+    @include mq(retina) {
+      background-image: url('../images/products/home-pic2@2x.png');
+    }
   }
   &:hover::before {
-    transform: translate(-50%, -50%) scale(1.2);
+    transform: translate(-50%, -50%) scale(1.1);
   }
 }
 
@@ -225,9 +233,13 @@
 
       transform: translate(-50%, -65%);
     }
+
+    @include mq(retina) {
+      background-image: url('../images/products/home-pic3@2x.png');
+    }
   }
   &:hover::before {
-    transform: translate(-50%, -50%) scale(1.2);
+    transform: translate(-50%, -50%) scale(1.1);
   }
 }
 
@@ -257,6 +269,11 @@
     height: 6px;
 
     background-image: url('../images/products/group-4.png');
+
+    @include mq(retina) {
+      background-image: url('../images/products/group-4@2x.png');
+      background-size: cover;
+    }
   }
 
   @include mq(desktop) {
@@ -328,6 +345,11 @@
   @include mq(desktop) {
     bottom: 100px;
   }
+
+  @include mq(retina) {
+    background-image: url('../images/products/arrow-right-4@2x.png');
+    background-size: cover;
+  }
 }
 
 .products__modal {
@@ -345,8 +367,14 @@
   background: #ee34a3;
 
   background-image: url('../images/products/home-pic1.png');
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;
+
+  @include mq(retina) {
+    background-image: url('../images/products/home-pic1@2x.png');
+    background-size: contain;
+  }
 }
 
 .products__modal--second {
@@ -355,18 +383,31 @@
   background-image: url('../images/products/home-pic2.png');
   background-repeat: no-repeat;
   background-position: bottom;
+  background-size: contain;
+
+  @include mq(retina) {
+    background-image: url('../images/products/home-pic2@2x.png');
+    background-size: contain;
+  }
 }
 
 .products__modal--third {
   background: #a2e747;
 
   background-image: url('../images/products/home-pic3.png');
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;
+
+  @include mq(retina) {
+    background-image: url('../images/products/home-pic3@2x.png');
+    background-size: contain;
+  }
 }
 
 .products__text--modal {
   padding: 77px;
+  opacity: 0;
 
   @include mq(tablet) {
     padding: 36px;
@@ -421,6 +462,11 @@
     transition: 0.5s width ease 0.3s, 0.5s height ease 0.3s, 0.5s border-radius ease 0.5s;
 
     .products__close {
+      opacity: 1;
+      transition: 0.5s all ease 1s;
+    }
+
+    .products__text--modal {
       opacity: 1;
       transition: 0.5s all ease 1s;
     }
