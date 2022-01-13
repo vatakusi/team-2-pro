@@ -1,318 +1,318 @@
 .hero {
-    position: relative;
-    height: 502px;
-    padding-top: 193px;
-    background-color: var(--bgc-hero-cart1);
-    overflow-x: hidden;
+  position: relative;
+  height: 502px;
+  padding-top: 193px;
+  background-color: var(--bgc-hero-cart1);
+  overflow-x: hidden;
 
+  @include mq(tablet) {
+    height: 399px;
+    padding-top: 102px;
+  }
+
+  @include mq(desktop) {
+    height: 665px;
+    padding-top: 171px;
+  }
+
+  &__flex {
+    height: 100%;
     @include mq(tablet) {
-        height: 399px;
-        padding-top: 102px;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
     }
 
     @include mq(desktop) {
-        height: 665px;
-        padding-top: 171px;
+      height: 100%;
     }
+  }
 
-    &__flex {
-        height: 100%;
-        @include mq(tablet) {
-            position: relative;
-            display: flex;
-            justify-content: space-between;
-        }
+  &__left {
+    position: relative;
+    z-index: 14;
 
-        @include mq(desktop) {
-            height: 100%;
-        }
-    }
+    &-bottom {
+      @include mq(mobile-only) {
+        display: none;
+      }
 
-    &__left {
-        position: relative;
-        z-index: 15;
-
-        &-bottom {
-            @include mq(mobile-only) {
-                display: none;
-            }
-
-            @include mq(tablet) {
-                display: flex;
-                align-items: flex-end;
-                margin-top: 19px;
-            }
-
-            @include mq(desktop) {
-                margin-top: 56px;
-                margin-left: -40px;
-            }
-        }
-
-        &-img {
-            flex-shrink: 0;
-
-            @include mq(desktop) {
-                margin-right: 30px;
-            }
-        }
-
-        &-text {
-            flex-basis: 105px;
-
-            font-family: var(--main-font);
-            font-size: 8px;
-            line-height: 1.5;
-            color: var(--akcent2-light-title);
-
-            @include mq(desktop) {
-                font-size: 14px;
-                flex-basis: 200px;
-            }
-        }
-
-        &-next {
-            display: flex;
-            justify-content: center;
-            margin-top: 10px;
-            margin-bottom: 5px;
-            width: 18px;
-            height: 18px;
-
-            background-color: var(--akcent2-light-title);
-            border-radius: 50%;
-
-            transition: background-color 250ms linear;
-
-            svg {
-                fill: var(--akcent-red-title);
-            }
-
-            &:hover,
-            &:focus {
-                background-color: #ECEBEB;
-            }
-
-            @include mq(desktop) {
-                width: 26px;
-                height: 26px;
-                margin-top: 20px;
-                align-items: center;
-
-                svg {
-                    width: 8px;
-                    height: 8px;
-                }
-            }
-        }
-    }
-
-    &__title {
-        margin-bottom: 19px;
-        width: 218px;
-
-        font-family: var(--title-font);
-        font-size: 48px;
-        font-weight: 400;
-        line-height: 1;
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
-        color: var(--akcent-red-title);
-
-        span {
-            display: inline-block;
-
-            font-family: var(--title-font);
-            font-size: 26px;
-            line-height: 1.15;
-            letter-spacing: 0.04em;
-            text-transform: uppercase;
-            color: var(--akcent2-light-title);
-        }
-
-        @include mq(tablet) {
-            width: 162px;
-            font-size: 34px;
-
-            span {
-                font-size: 22px;
-            }
-        }
-
-        @include mq(desktop) {
-            width: 277px;
-            margin-bottom: 25px;
-            font-size: 58px;
-
-            span {
-                font-size: 38px;
-            }
-        }
-    }
-
-    &__products,
-    &__made {
-        display: inline-flex;
-        align-items: center;
-        height: 24px;
-        padding-left: 15px;
-        padding-right: 15px;
-
-        font-family: var(--main-font);
-        font-size: 8px;
-        line-height: 1.25;
-
-        border-radius: 20px;
-
-        transition: background-color 250ms linear;
-
-        @include mq(desktop) {
-            height: 40px;
-            font-size: 14px;
-        }
-    }
-
-    &__products {
-        margin-right: 9px;
-        color: var(--akcent2-light-title);
-        background-color: var(--akcent-red-title);
-
-        &:hover {
-            background-color: #C7133E;
-        }
-
-        @include mq(desktop) {
-            margin-right: 15px;
-        }
-    }
-
-    &__made {
-        color: var(--akcent-red-title);
-        background-color: var(--akcent2-light-title);
-
-        &:hover {
-            background-color: #ECEBEB;
-        }
-    }
-
-    &__middle {
-        position: absolute;
-        bottom: 0;
-        right: 32px;
-
-        z-index: 10;
-
-        &::before {
-            content: '';
-            position: absolute;
-            top: -9px;
-            right: -94px;
-            width: 346px;
-            height: 344px;
-    
-            background-color: var(--bgc-circle-hiro2);
-            border-radius: 50%;
-            z-index: -1;
-    
-            @include mq(tablet) {
-                width: 324px;
-                height: 322px;
-                top: -32px;
-                left: -71px;
-            }
-
-            @include mq(desktop) {
-                width: 538px;
-                height: 538px;
-                top: -56px;
-                left: -119px;
-            }
-        }
-
-        @include mq(tablet) {
-            left: 358px;
-        }
-
-        @include mq(desktop) {
-            left: 485px;
-        }
-    }
-
-    &__right {
-        @media (max-width: 767px) {
-            display: none;
-        }
-        z-index: 10;
-
-        &-img {
-            position: absolute;
-            right: 0;
-            bottom: 0;
-        }
-    }
-
-    &__group {
-        position: relative;
+      @include mq(tablet) {
         display: flex;
-        flex-direction: column;
         align-items: flex-end;
-        padding-right: 10px;
+        margin-top: 19px;
+      }
 
-        &:not(:first-child) {
-            margin-top: 13px;
-
-            @include mq(desktop) {
-                margin-top: 15px;
-            }
-        }
-
-        @include mq(desktop) {
-            padding-right: 0;
-        }
-
-        &::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 16px;
-            height: 16px;
-
-            background-color: var(--akcent2-light-title);
-            border-radius: 50%;
-            z-index: -1;
-
-            @include mq(desktop) {
-                width: 30px;
-                height: 30px;
-                right: -18px;
-            }
-        }
-
-        &-num {
-            font-family: var(--title-font);
-            font-size: 28px;
-            line-height: 1.14;
-
-            letter-spacing: 0.04em;
-
-            color: var(--akcent-red-title);
-
-            @include mq(desktop) {
-                font-size: 46px;
-            }
-        }
-
-        &-text {
-            font-family: var(--main-font);
-            font-size: 8px;
-            line-height: 1.25;
-
-            color: var(--akcent2-light-title);
-
-            @include mq(desktop) {
-                font-size: 14px;
-            }
-        }
+      @include mq(desktop) {
+        margin-top: 56px;
+        margin-left: -40px;
+      }
     }
+
+    &-img {
+      flex-shrink: 0;
+
+      @include mq(desktop) {
+        margin-right: 30px;
+      }
+    }
+
+    &-text {
+      flex-basis: 105px;
+
+      font-family: var(--main-font);
+      font-size: 8px;
+      line-height: 1.5;
+      color: var(--akcent2-light-title);
+
+      @include mq(desktop) {
+        font-size: 14px;
+        flex-basis: 200px;
+      }
+    }
+
+    &-next {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+      margin-bottom: 5px;
+      width: 18px;
+      height: 18px;
+
+      background-color: var(--akcent2-light-title);
+      border-radius: 50%;
+
+      transition: background-color 250ms linear;
+
+      svg {
+        fill: var(--akcent-red-title);
+      }
+
+      &:hover,
+      &:focus {
+        background-color: #ecebeb;
+      }
+
+      @include mq(desktop) {
+        width: 26px;
+        height: 26px;
+        margin-top: 20px;
+        align-items: center;
+
+        svg {
+          width: 8px;
+          height: 8px;
+        }
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 19px;
+    width: 218px;
+
+    font-family: var(--title-font);
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--akcent-red-title);
+
+    span {
+      display: inline-block;
+
+      font-family: var(--title-font);
+      font-size: 26px;
+      line-height: 1.15;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--akcent2-light-title);
+    }
+
+    @include mq(tablet) {
+      width: 162px;
+      font-size: 34px;
+
+      span {
+        font-size: 22px;
+      }
+    }
+
+    @include mq(desktop) {
+      width: 277px;
+      margin-bottom: 25px;
+      font-size: 58px;
+
+      span {
+        font-size: 38px;
+      }
+    }
+  }
+
+  &__products,
+  &__made {
+    display: inline-flex;
+    align-items: center;
+    height: 24px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    font-family: var(--main-font);
+    font-size: 8px;
+    line-height: 1.25;
+
+    border-radius: 20px;
+
+    transition: background-color 250ms linear;
+
+    @include mq(desktop) {
+      height: 40px;
+      font-size: 14px;
+    }
+  }
+
+  &__products {
+    margin-right: 9px;
+    color: var(--akcent2-light-title);
+    background-color: var(--akcent-red-title);
+
+    &:hover {
+      background-color: #c7133e;
+    }
+
+    @include mq(desktop) {
+      margin-right: 15px;
+    }
+  }
+
+  &__made {
+    color: var(--akcent-red-title);
+    background-color: var(--akcent2-light-title);
+
+    &:hover {
+      background-color: #ecebeb;
+    }
+  }
+
+  &__middle {
+    position: absolute;
+    bottom: 0;
+    right: 32px;
+
+    z-index: 10;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -9px;
+      right: -94px;
+      width: 346px;
+      height: 344px;
+
+      background-color: var(--bgc-circle-hiro2);
+      border-radius: 50%;
+      z-index: -1;
+
+      @include mq(tablet) {
+        width: 324px;
+        height: 322px;
+        top: -32px;
+        left: -71px;
+      }
+
+      @include mq(desktop) {
+        width: 538px;
+        height: 538px;
+        top: -56px;
+        left: -119px;
+      }
+    }
+
+    @include mq(tablet) {
+      left: 358px;
+    }
+
+    @include mq(desktop) {
+      left: 485px;
+    }
+  }
+
+  &__right {
+    @media (max-width: 767px) {
+      display: none;
+    }
+    z-index: 10;
+
+    &-img {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+  }
+
+  &__group {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 10px;
+
+    &:not(:first-child) {
+      margin-top: 13px;
+
+      @include mq(desktop) {
+        margin-top: 15px;
+      }
+    }
+
+    @include mq(desktop) {
+      padding-right: 0;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 16px;
+      height: 16px;
+
+      background-color: var(--akcent2-light-title);
+      border-radius: 50%;
+      z-index: -1;
+
+      @include mq(desktop) {
+        width: 30px;
+        height: 30px;
+        right: -18px;
+      }
+    }
+
+    &-num {
+      font-family: var(--title-font);
+      font-size: 28px;
+      line-height: 1.14;
+
+      letter-spacing: 0.04em;
+
+      color: var(--akcent-red-title);
+
+      @include mq(desktop) {
+        font-size: 46px;
+      }
+    }
+
+    &-text {
+      font-family: var(--main-font);
+      font-size: 8px;
+      line-height: 1.25;
+
+      color: var(--akcent2-light-title);
+
+      @include mq(desktop) {
+        font-size: 14px;
+      }
+    }
+  }
 }
