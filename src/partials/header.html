@@ -5,7 +5,7 @@
         <img src="images/header/header-logo.png" alt="Logo" width="199" />
       </a>
       <div class="header__menu" data-menu>
-        <button class="btn" class="header__menu-button">
+        <button class="btn" class="header__menu-button" data-buy-btn="btn-menu">
           Buy now
           <svg width="6" height="8">
             <use href="images/sprite.svg#arrov-right-1"></use>
@@ -34,7 +34,7 @@
         <span></span>
         <span></span>
       </button>
-      <button class="header__button btn" type="button">
+      <button class="header__button btn" type="button" data-buy-btn="btn">
         Buy now
         <svg width="6" height="8">
           <use href="images/sprite.svg#arrov-right-1"></use>
@@ -43,3 +43,64 @@
     </nav>
   </div>
 </header>
+
+<div class="backdrop is-hidden" data-modal-buy>
+  <div class="modal">
+    <button type="button" class="modal__close-btn" data-buy-close>
+      <svg class="close-btn" width="11" height="11">
+        <use href="./images/sprite.svg#icon-Vector-X"></use>
+      </svg>
+    </button>
+    <p class="modal__title">Leave your details, we will call you back</p>
+    <form action="#" class="modal__form">
+      <div class="modal-field">
+        <label for="username" class="modal__label">Name</label>
+        <div class="input-wrap">
+          <input type="text" class="modal__input" name="username" id="username" />
+          <svg class="input-icon" width="18" height="18">
+            <use href="./images/sprite.svg#icon-person-black"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="modal-field">
+        <label for="tel" class="modal__label">Number phone</label>
+        <div class="input-wrap">
+          <input
+            type="tel"
+            pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+            class="modal__input"
+            name="tel"
+            title="+38 (099) 000 00 00"
+            id="tel"
+          />
+          <svg class="input-icon" width="18" height="18">
+            <use href="./images/sprite.svg#icon-phone-black"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="modal__field">
+        <label for="email" class="modal__label">mail</label>
+        <div class="input-wrap">
+          <input
+            type="email"
+            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+            class="modal__input"
+            name="email"
+            title="i@i.ua"
+            id="email"
+          />
+          <svg class="input-icon" width="18" height="18">
+            <use href="./images/sprite.svg#icon-email-black"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="modal__field">
+        <label for="text" class="modal__label">Comment</label>
+        <textarea name="text" id="text" class="modal__text" placeholder="Enter text"></textarea>
+        <div class="modal-field">
+          <button type="button" class="modal__form-btn">Send</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
