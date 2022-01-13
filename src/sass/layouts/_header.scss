@@ -1,215 +1,222 @@
 .header {
-    position: absolute;
-    width: 100%;
-    padding: 5px 0;
+  position: absolute;
+  width: 100%;
+  padding: 5px 0;
+
+  @include mq(tablet) {
+    padding-top: 37px;
+  }
+
+  @include mq(desktop) {
+    z-index: 15;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    z-index: 15;
+    @include mq(desktop) {
+      margin-left: -70px;
+    }
+  }
+
+  &__menu {
+    @media (max-width: 767px) {
+      width: 250px;
+    }
+    @media (max-width: 1279px) {
+      position: fixed;
+      top: 0;
+      right: 0;
+      height: 100vh;
+      width: 254px;
+      padding-top: 60px;
+
+      background-color: var(--bgc-mob-menu);
+      transform: translateX(100%);
+      transition: transform 0.6s ease;
+      z-index: 40;
+      &.active {
+        transform: translateX(0);
+      }
+
+      button {
+        width: 209px;
+        display: block;
+        margin: 0 auto 19px auto;
+
+        color: var(--akcent-red-title);
+        background-color: var(--akcent2-light-title);
+
+        &:hover {
+          background-color: #ecebeb;
+        }
+      }
+    }
+
+    @include mq(desktop) {
+      button {
+        display: none;
+      }
+    }
+  }
+  svg {
+    margin-left: 14px;
+    display: inline-block;
+    stroke: var(--akcent-red-title);
+  }
+
+  &__list {
+    @include mq(desktop) {
+      display: flex;
+    }
+  }
+
+  &__item {
+    @media (max-width: 1279px) {
+      position: relative;
+      border-top: 1px solid #e18298;
+      &:last-child {
+        border-bottom: 1px solid #e18298;
+      }
+    }
+
+    @include mq(desktop) {
+      &:not(:last-child) {
+        margin-right: 35px;
+      }
+    }
+  }
+
+  &__link {
+    color: var(--akcent2-light-title);
+
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.28;
+
+    transition: color 250ms linear;
+
+    &.active {
+      color: var(--akcent-red-title);
+    }
+
+    &:hover,
+    &:focus {
+      color: var(--akcent-red-title);
+    }
+    @media (max-width: 1279px) {
+      padding: 13px 21px;
+      display: inline-block;
+    }
+
+    @include mq(desktop) {
+      font-size: 16px;
+      line-height: 1.31;
+    }
+  }
+
+  &__button {
+    @include mq(mobile-only) {
+      display: none;
+    }
 
     @include mq(tablet) {
-        padding-top: 37px;
+      width: 160px;
+      margin-left: 26px;
+
+      color: var(--akcent-red-title);
+      background-color: var(--akcent2-light-title);
+      z-index: 15;
     }
 
     @include mq(desktop) {
-        z-index: 15;
+      margin-left: 0;
     }
-
-    &__nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    &:hover {
+      background-color: #ecebeb;
     }
-
-    &__logo {
-        z-index: 15;
-        @include mq(desktop) {
-            margin-left: -70px;
-        }
-    }
-
-    &__menu {
-        @media (max-width: 767px) {
-            width: 250px;
-        }
-        @media (max-width: 1279px) {
-            position: fixed;
-            top: 0;
-            right: 0;
-            height: 100vh;
-            width: 254px;
-            padding-top: 60px;
-    
-            background-color: var(--bgc-mob-menu);
-            transform: translateX(100%);
-            transition: transform 0.6s ease;
-            z-index: 40;
-            &.active {
-                transform: translateX(0);
-            }
-    
-            button {
-                width: 209px;
-                display: block;
-                margin: 0 auto 19px auto;
-    
-                color: var(--akcent-red-title);
-                background-color: var(--akcent2-light-title);
-
-                &:hover {
-                    background-color: #ECEBEB;
-                }
-            }
-        }
-
-        @include mq(desktop) {
-            button {
-                display: none;
-            }
-        }
-    }
-    svg {
-        margin-left: 14px;
-        display: inline-block;
-        stroke: var(--akcent-red-title);
-    }
-
-    &__list {
-        @include mq(desktop) {
-            display: flex;
-        }
-    }
-
-
-    &__item {
-        @media (max-width: 1279px) {
-            position: relative;
-            border-top: 1px solid #E18298;
-            &:last-child {
-                border-bottom: 1px solid #E18298;
-            }
-        }
-
-        @include mq(desktop) {
-            &:not(:last-child) {
-                margin-right: 35px;
-            }
-        }
-    }
-
-    &__link {
-        color: var(--akcent2-light-title);
-
-        font-family: var(--main-font);
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.28;
-
-        transition: color 250ms linear;
-
-        &.active {
-            color: var(--akcent-red-title);
-        }
-
-        &:hover,
-        &:focus {
-            color: var(--akcent-red-title);
-        }
-        @media (max-width: 1279px) {
-            padding: 13px 21px;
-            display: inline-block;
-        }
-
-        @include mq(desktop) {
-            font-size: 16px;
-            line-height: 1.31;
-        }
-    }
-
-    &__button {
-        @include mq(mobile-only) {
-            display: none;
-        }
-
-        @include mq(tablet) {
-            width: 160px;
-            margin-left: 26px;
-
-            color: var(--akcent-red-title);
-            background-color: var(--akcent2-light-title);
-            z-index: 15;
-        }
-
-        @include mq(desktop) {
-            margin-left: 0;
-        }
-        &:hover {
-            background-color: #ECEBEB;
-        }
-    }
+  }
 }
 
-
-
 .burger {
-    border: transparent;
-    background-color: transparent;
-    
-	@media (max-width: 1279px) {
-		display: block;
-		position: relative;
-        margin-left: auto;
-		width: 21px;
-		height: 12px;
-		cursor: pointer;
-		z-index: 25;
-		span {
-			transition: all 0.3s ease 0s;
-			top: calc(50% - 1px);
-			left: 0px;
-			position: absolute;
-			width: 100%;
-			height: 2px;
-			background-color: var(--akcent-red-title);
-			&:first-child {
-				top: 0px;
-			}
-			&:last-child {
-				top: auto;
-				bottom: 0px;
-			}
-		}
-		&.active {
-            position: absolute;
-            right: 20px;
-            z-index: 40;
-			span {
-                background-color: var(--akcent2-light-title);
-				transform: scale(0);
-				&:first-child {
-					transform: rotate(-45deg);
-					top: calc(50% - 1px);
-				}
-				&:last-child {
-					transform: rotate(45deg);
-					bottom: calc(50% - 1px);
-				}
-			}
+  border: transparent;
+  background-color: transparent;
 
-            @include mq(tablet) {
-                top: 23px;
-            }
-		}
-	}
-
-    @include mq(desktop) {
-        display: none;
+  @media (max-width: 1279px) {
+    display: block;
+    position: relative;
+    margin-left: auto;
+    width: 21px;
+    height: 12px;
+    cursor: pointer;
+    z-index: 25;
+    span {
+      transition: all 0.3s ease 0s;
+      top: calc(50% - 1px);
+      left: 0px;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: var(--akcent-red-title);
+      &:first-child {
+        top: 0px;
+      }
+      &:last-child {
+        top: auto;
+        bottom: 0px;
+      }
     }
+    &.active {
+      position: absolute;
+      right: 20px;
+      z-index: 40;
+      span {
+        background-color: var(--akcent2-light-title);
+        transform: scale(0);
+        &:first-child {
+          transform: rotate(-45deg);
+          top: calc(50% - 1px);
+        }
+        &:last-child {
+          transform: rotate(45deg);
+          bottom: calc(50% - 1px);
+        }
+      }
+
+      @include mq(tablet) {
+        top: 23px;
+      }
+    }
+  }
+
+  @include mq(desktop) {
+    display: none;
+  }
 }
 
 .wrapper {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.7);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    z-index: 20;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 20;
+
+  /* @include mq(tablet) {
+    background-color: transparent;
+  } */
+
+  @include mq(desktop) {
+    position: relative;
+    width: auto;
+    background-color: transparent;
+  }
 }
