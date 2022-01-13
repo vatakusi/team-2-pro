@@ -4,11 +4,7 @@
   justify-content: center;
   background: linear-gradient(180deg, var(--bgc-sections2) 43%, var(--akcent2-light-title) 43%);
   @include mq(mobile) {
-    background: linear-gradient(
-      180deg,
-      var(--bgc-sections2) 45.5%,
-      var(--akcent2-light-title) 45.5%
-    );
+    background: linear-gradient(180deg, var(--bgc-sections2) 29.9%, var(--akcent2-light-title) 30%);
     padding: 0px 0px 61px 0px;
     & img {
       width: 480px;
@@ -25,7 +21,7 @@
     }
   }
   @include mq(desktop) {
-    background: linear-gradient(180deg, var(--bgc-sections2) 43%, var(--akcent2-light-title) 43%);
+    background: linear-gradient(180deg, var(--bgc-sections2) 34.9%, var(--akcent2-light-title) 35%);
     & img {
       width: 1280px;
     }
