@@ -1,4 +1,4 @@
-.contacts-container{
+.contacts-container {
   padding-bottom: 113px;
   @include mq(tablet) {
     padding-bottom: 158px;
@@ -21,7 +21,7 @@
       background-image: url(../images/contacts-fon-images/sectionbg21@2x.png);
       background-repeat: no-repeat;
       background-size: 100% auto;
-      }
+    }
   }
 
   @include mq(tablet-only) {
@@ -567,7 +567,7 @@
   align-items: center;
   justify-content: center;
   z-index: 100;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 0.5s all ease 0.3s, 0.5s height ease 0.3s, 0.5s border-radius ease 0.5s;
 }
 
 .modal {
