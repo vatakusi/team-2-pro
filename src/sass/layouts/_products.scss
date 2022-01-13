@@ -294,9 +294,7 @@
 
   @include font(14px, 1.5, 700);
 
-  text-transform: uppercase;
   letter-spacing: 0.04em;
-
   color: #ffffff;
 
   @include mq(tablet) {
