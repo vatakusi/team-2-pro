@@ -54,13 +54,13 @@
     @include mq(mobile) {
       padding: 45px 68px 30px 73px;
       margin-bottom: 47px;
-      background-size: 290px 69px;
+
+      background-size: 55px auto;
       max-width: 400px;
     }
     @include mq(tablet) {
       padding: 47px 80px 34px 80px;
       @include font(14px, 2.16, 500);
-      /* background-size: 524px 69px; */
       background-size: 55px auto;
       max-width: 620px;
 
