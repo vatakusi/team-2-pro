@@ -1,12 +1,17 @@
 const swiper = new Swiper('.swiper', {
   // Optional parameters
+   effect: 'flip',
+  flipEffect: {
+    slideShadows: false,
+  },
 
   loop: true,
 
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
-     type: 'bullets',
+    type:'bullets',
+    clickable: 'true',
   },
 
 
