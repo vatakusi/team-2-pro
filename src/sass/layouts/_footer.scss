@@ -18,6 +18,7 @@
     &:hover,
     &:focus {
       background-color: var(--akcent-red-title);
+      transition: background-color 250ms linear;
     }
 
     @include mq(tablet) {
@@ -115,6 +116,12 @@
 
     &-call-num {
       color: var(--akcent-red-title);
+
+      &:hover,
+      &:focus {
+        color: #c7133e;
+        transition: background-color 250ms linear;
+      }
     }
   }
 

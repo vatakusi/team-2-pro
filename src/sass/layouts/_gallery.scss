@@ -11,11 +11,7 @@
     }
   }
   @include mq(tablet) {
-    background: linear-gradient(
-      180deg,
-      var(--bgc-sections2) 44.3%,
-      var(--akcent2-light-title) 44.3%
-    );
+    background: linear-gradient(180deg, var(--bgc-sections2) 31%, var(--akcent2-light-title) 34%);
     & img {
       width: 786px;
     }
