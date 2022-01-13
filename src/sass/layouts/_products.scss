@@ -407,6 +407,7 @@
 
 .products__text--modal {
   padding: 77px;
+  opacity: 0;
 
   @include mq(tablet) {
     padding: 36px;
@@ -461,6 +462,11 @@
     transition: 0.5s width ease 0.3s, 0.5s height ease 0.3s, 0.5s border-radius ease 0.5s;
 
     .products__close {
+      opacity: 1;
+      transition: 0.5s all ease 1s;
+    }
+
+    .products__text--modal {
       opacity: 1;
       transition: 0.5s all ease 1s;
     }
