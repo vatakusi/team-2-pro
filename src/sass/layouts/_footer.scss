@@ -5,6 +5,27 @@
 .footer {
   background-color: var(--bgc-sections2);
 
+  &__link-icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+
+    background-color: var(--bgc-soc-icons);
+
+    &:hover,
+    &:focus {
+      background-color: var(--akcent-red-title);
+    }
+
+    @include mq(tablet) {
+      width: 34px;
+      height: 34px;
+    }
+  }
+
   @include mq(tablet) {
     display: flex;
     justify-content: space-between;
@@ -61,34 +82,14 @@
   }
 
   &__list-item {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-
-    background-color: var(--bgc-soc-icons);
-
-    @include mq(tablet) {
-      width: 34px;
-      height: 34px;
-    }
-
     &:not(:last-child) {
       margin-right: 24px;
-    }
-
-    &:hover,
-    &:focus {
-      background-color: var(--akcent-red-title);
     }
   }
 
   &__icon {
     width: 18.82px;
     height: 18.82px;
-    /* background-color: var(--bgc-soc-icons); */
 
     &-git {
       width: 18.82px;

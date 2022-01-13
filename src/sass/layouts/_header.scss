@@ -7,6 +7,10 @@
         padding-top: 37px;
     }
 
+    @include mq(desktop) {
+        z-index: 15;
+    }
+
     &__nav {
         display: flex;
         justify-content: space-between;
@@ -14,6 +18,7 @@
     }
 
     &__logo {
+        z-index: 15;
         @include mq(desktop) {
             margin-left: -70px;
         }
@@ -33,8 +38,8 @@
     
             background-color: var(--bgc-mob-menu);
             transform: translateX(100%);
-            transition: transform 0.3s ease;
-    
+            transition: transform 0.6s ease;
+            z-index: 40;
             &.active {
                 transform: translateX(0);
             }
@@ -128,6 +133,7 @@
 
             color: var(--akcent-red-title);
             background-color: var(--akcent2-light-title);
+            z-index: 15;
         }
 
         @include mq(desktop) {
@@ -144,6 +150,7 @@
 .burger {
     border: transparent;
     background-color: transparent;
+    
 	@media (max-width: 1279px) {
 		display: block;
 		position: relative;
@@ -151,7 +158,7 @@
 		width: 21px;
 		height: 12px;
 		cursor: pointer;
-		z-index: 5;
+		z-index: 25;
 		span {
 			transition: all 0.3s ease 0s;
 			top: calc(50% - 1px);
@@ -171,6 +178,7 @@
 		&.active {
             position: absolute;
             right: 20px;
+            z-index: 40;
 			span {
                 background-color: var(--akcent2-light-title);
 				transform: scale(0);
