@@ -1,828 +1,830 @@
 .contacts {
-    background-color: var(--bgc-sections2);
-    margin-top: 102px;
+  background-color: var(--bgc-sections2);
+  margin-top: 102px;
 
-    @include mq(desktop) {
-        background-image: url(../images/contacts-fon-images/sectionbg21@1x.png);
-        background-repeat: no-repeat;
-        background-size: 100% auto;
+  @include mq(desktop) {
+    background-image: url(../images/contacts-fon-images/sectionbg21@1x.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
 
-        @include mq(retina) {
-            background-image: url(../images/contacts-fon-images/sectionbg21@2x.png);
-            background-repeat: no-repeat;
-            background-size: 100% auto;
-        }
+    @include mq(retina) {
+      background-image: url(../images/contacts-fon-images/sectionbg21@2x.png);
+      background-repeat: no-repeat;
+      background-size: 100% auto;
     }
+  }
 
-    @include mq(tablet-only) {
-        background-image: none;
-    }
+  @include mq(tablet-only) {
+    background-image: none;
+  }
 }
 
 .contacts__card-list {
-    padding-top: 43px;
-    padding-left: 20px;
-    padding-bottom: 43px;
-    padding-right: 21px;
-    background-color: #ffffff;
+  padding-top: 43px;
+  padding-left: 20px;
+  padding-bottom: 43px;
+  padding-right: 21px;
+  background-color: #ffffff;
 
-    @include mq(mobile-only) {
-        &:first-child {
-            margin-top: -84px;
-        }
+  @include mq(mobile-only) {
+    &:first-child {
+      margin-top: -84px;
     }
-    @include mq(tablet) {
-        padding-top: 50px;
-        padding-left: 31px;
-        padding-bottom: 50px;
-        padding-right: 32px;
-        margin-top: -78px;
-    }
-    @include mq(desktop) {
-        padding-top: 52px;
-        padding-left: 43px;
-        padding-bottom: 52px;
-        padding-right: 43px;
-        margin-top: -102px;
-    }
+  }
+  @include mq(tablet) {
+    padding-top: 50px;
+    padding-left: 31px;
+    padding-bottom: 50px;
+    padding-right: 32px;
+    margin-top: -78px;
+  }
+  @include mq(desktop) {
+    padding-top: 52px;
+    padding-left: 43px;
+    padding-bottom: 52px;
+    padding-right: 43px;
+    margin-top: -102px;
+  }
 }
 
 .contacts__card-name {
-    background: #f0d1a5;
-    border-radius: 6px;
-    color: #ffffff;
-    width: 73px;
-    height: 16px;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.33;
+  background: #f0d1a5;
+  border-radius: 6px;
+  color: #ffffff;
+  width: 73px;
+  height: 16px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.33;
 
+  &::after {
+    content: '';
+    width: 179px;
+    height: 0px;
+    background-color: #e1e1e1;
+    border-radius: 2px;
+    border: 1px solid #e1e1e1;
+    position: absolute;
+    left: 0px;
+    bottom: -112px;
+    cursor: default;
+  }
+
+  &::before {
+    content: '';
+    width: 179px;
+    height: 0px;
+    background-color: #e1e1e1;
+    border-radius: 2px;
+    border: 1px solid #e1e1e1;
+    position: absolute;
+    left: 0px;
+    bottom: -265px;
+    cursor: default;
+  }
+  @include mq(tablet) {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.33;
+    height: 28px;
     &::after {
-        content: "";
-        width: 179px;
-        height: 0px;
-        background-color: #e1e1e1;
-        border-radius: 2px;
-        border: 1px solid #e1e1e1;
-        position: absolute;
-        left: 0px;
-        bottom: -112px;
-        cursor: default;
+      content: '';
+      width: 157px;
+      height: 0px;
+      background-color: #e1e1e1;
+      border-radius: 2px;
+      border: 1px solid #e1e1e1;
+      position: absolute;
+      left: 0px;
+      bottom: -151px;
+      cursor: default;
     }
 
     &::before {
-        content: "";
-        width: 179px;
-        height: 0px;
-        background-color: #e1e1e1;
-        border-radius: 2px;
-        border: 1px solid #e1e1e1;
-        position: absolute;
-        left: 0px;
-        bottom: -265px;
-        cursor: default;
+      content: '';
+      width: 157px;
+      height: 0px;
+      background-color: #e1e1e1;
+      border-radius: 2px;
+      border: 1px solid #e1e1e1;
+      position: absolute;
+      left: 0px;
+      bottom: -335px;
+      cursor: default;
     }
-    @include mq(tablet) {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.33;
-        height: 28px;
-        &::after {
-            content: "";
-            width: 157px;
-            height: 0px;
-            background-color: #e1e1e1;
-            border-radius: 2px;
-            border: 1px solid #e1e1e1;
-            position: absolute;
-            left: 0px;
-            bottom: -151px;
-            cursor: default;
-        }
+  }
+  @include mq(desktop) {
+    height: 28px;
+    &::after {
+      content: '';
+      width: 234px;
+      height: px;
+      background-color: #e1e1e1;
+      border-radius: 2px;
+      border: 1px solid #e1e1e1;
+      position: absolute;
+      left: 0px;
+      bottom: -147px;
+      cursor: default;
+    }
 
-        &::before {
-            content: "";
-            width: 157px;
-            height: 0px;
-            background-color: #e1e1e1;
-            border-radius: 2px;
-            border: 1px solid #e1e1e1;
-            position: absolute;
-            left: 0px;
-            bottom: -335px;
-            cursor: default;
-        }
+    &::before {
+      content: '';
+      width: 234px;
+      height: 0px;
+      background-color: #e1e1e1;
+      border-radius: 2px;
+      border: 1px solid #e1e1e1;
+      position: absolute;
+      left: 0px;
+      bottom: -330px;
+      cursor: default;
     }
-    @include mq(desktop) {
-        height: 28px;
-        &::after {
-            content: "";
-            width: 234px;
-            height: px;
-            background-color: #e1e1e1;
-            border-radius: 2px;
-            border: 1px solid #e1e1e1;
-            position: absolute;
-            left: 0px;
-            bottom: -147px;
-            cursor: default;
-        }
-
-        &::before {
-            content: "";
-            width: 234px;
-            height: 0px;
-            background-color: #e1e1e1;
-            border-radius: 2px;
-            border: 1px solid #e1e1e1;
-            position: absolute;
-            left: 0px;
-            bottom: -330px;
-            cursor: default;
-        }
-    }
+  }
 }
 
 .contacts__card-namefood {
-    background: #c2e297;
-    border-radius: 6px;
-    color: #ffffff;
-    width: 130px;
-    height: 16px;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.33;
+  background: #c2e297;
+  border-radius: 6px;
+  color: #ffffff;
+  width: 130px;
+  height: 16px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.33;
 
+  &::after {
+    content: '';
+    width: 179px;
+    height: 0px;
+    background-color: #e1e1e1;
+    border-radius: 2px;
+    border: 1px solid #e1e1e1;
+    position: absolute;
+    left: 0px;
+    bottom: -112px;
+    cursor: default;
+  }
+
+  &::before {
+    content: '';
+    width: 179px;
+    height: 0px;
+    background-color: #e1e1e1;
+    border-radius: 2px;
+    border: 1px solid #e1e1e1;
+    position: absolute;
+    left: 0px;
+    bottom: -265px;
+    cursor: default;
+  }
+  @include mq(tablet) {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.33;
+    height: 28px;
     &::after {
-        content: "";
-        width: 179px;
-        height: 0px;
-        background-color: #e1e1e1;
-        border-radius: 2px;
-        border: 1px solid #e1e1e1;
-        position: absolute;
-        left: 0px;
-        bottom: -112px;
-        cursor: default;
+      content: '';
+      width: 157px;
+      height: 0px;
+      background-color: #e1e1e1;
+      border-radius: 2px;
+      border: 1px solid #e1e1e1;
+      position: absolute;
+      left: 0px;
+      bottom: -151px;
+      cursor: default;
     }
 
     &::before {
-        content: "";
-        width: 179px;
-        height: 0px;
-        background-color: #e1e1e1;
-        border-radius: 2px;
-        border: 1px solid #e1e1e1;
-        position: absolute;
-        left: 0px;
-        bottom: -265px;
-        cursor: default;
+      content: '';
+      width: 157px;
+      height: 0px;
+      background-color: #e1e1e1;
+      border-radius: 2px;
+      border: 1px solid #e1e1e1;
+      position: absolute;
+      left: 0px;
+      bottom: -330px;
+      cursor: default;
     }
-    @include mq(tablet) {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.33;
-        height: 28px;
-        &::after {
-            content: "";
-            width: 157px;
-            height: 0px;
-            background-color: #e1e1e1;
-            border-radius: 2px;
-            border: 1px solid #e1e1e1;
-            position: absolute;
-            left: 0px;
-            bottom: -151px;
-            cursor: default;
-        }
+  }
+  @include mq(desktop) {
+    height: 28px;
+    &::after {
+      content: '';
+      width: 234px;
+      height: 0px;
+      background-color: #e1e1e1;
+      border-radius: 2px;
+      border: 1px solid #e1e1e1;
+      position: absolute;
+      left: 0px;
+      bottom: -147px;
+      cursor: default;
+    }
 
-        &::before {
-            content: "";
-            width: 157px;
-            height: 0px;
-            background-color: #e1e1e1;
-            border-radius: 2px;
-            border: 1px solid #e1e1e1;
-            position: absolute;
-            left: 0px;
-            bottom: -330px;
-            cursor: default;
-        }
+    &::before {
+      content: '';
+      width: 234px;
+      height: 0px;
+      background-color: #e1e1e1;
+      border-radius: 2px;
+      border: 1px solid #e1e1e1;
+      position: absolute;
+      left: 0px;
+      bottom: -335px;
+      cursor: default;
     }
-    @include mq(desktop) {
-        height: 28px;
-        &::after {
-            content: "";
-            width: 234px;
-            height: 0px;
-            background-color: #e1e1e1;
-            border-radius: 2px;
-            border: 1px solid #e1e1e1;
-            position: absolute;
-            left: 0px;
-            bottom: -147px;
-            cursor: default;
-        }
-
-        &::before {
-            content: "";
-            width: 234px;
-            height: 0px;
-            background-color: #e1e1e1;
-            border-radius: 2px;
-            border: 1px solid #e1e1e1;
-            position: absolute;
-            left: 0px;
-            bottom: -335px;
-            cursor: default;
-        }
-    }
+  }
 }
 
 .contacts__card {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 34px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 34px;
 
-    @include mq(tablet) {
-        flex-wrap: nowrap;
-        margin-bottom: 81px;
-    }
-    @include mq(desktop) {
-        flex-wrap: nowrap;
-        margin-bottom: 86px;
-    }
+  @include mq(tablet) {
+    flex-wrap: nowrap;
+    margin-bottom: 81px;
+  }
+  @include mq(desktop) {
+    flex-wrap: nowrap;
+    margin-bottom: 86px;
+  }
 }
 
 .contacts__card-list {
-    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-    border-radius: 24px;
-    width: 220px;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  width: 220px;
 
-    @include mq(mobile-only) {
-        display: block;
-        margin-bottom: 20px;
-    }
-    @include mq(tablet) {
-        flex-basis: calc((100% - 1 / 10px) / 3);
-    }
-    @include mq(desktop) {
-        width: 330px;
-        height: 572px;
-    }
+  @include mq(mobile-only) {
+    display: block;
+    margin-bottom: 20px;
+  }
+  @include mq(tablet) {
+    flex-basis: calc((100% - 90px) / 3);
+  }
+  @include mq(desktop) {
+    width: 330px;
+    height: 572px;
+  }
 }
 
 .contacts__card-list:not(:last-child) {
-    @include mq(mobile-only) {
-        margin-right: o auto;
-    }
-    @include mq(tablet) {
-        margin-right: 30px;
-    }
-    @include mq(desktop) {
-        margin-right: 30px;
-    }
+  @include mq(mobile-only) {
+    margin-right: o auto;
+  }
+  @include mq(tablet) {
+    margin-right: 30px;
+  }
+  @include mq(desktop) {
+    margin-right: 30px;
+  }
 }
 
 .contacts__card-btn {
-    display: inline-block;
+  display: inline-block;
 }
 
 .contacts__card-btn-one {
-    background: #d41342;
-    color: #ffffff;
-    border-radius: 22px;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 1.31;
-    align-items: center;
-    text-align: center;
-    height: 44px;
-    margin-bottom: 10px;
-    border-color: transparent;
+  background: #d41342;
+  color: #ffffff;
+  border-radius: 22px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.31;
+  align-items: center;
+  text-align: center;
+  height: 44px;
+  margin-bottom: 10px;
+  border-color: transparent;
 
-    @include mq(mobile-only) {
-        width: 162px;
-    }
-    @include mq(tablet) {
-        width: 191px;
-        margin-right: 15px;
-    }
-    @include mq(desktop) {
-        width: 198px;
-    }
+  @include mq(mobile-only) {
+    width: 162px;
+  }
+  @include mq(tablet) {
+    width: 191px;
+    margin-right: 15px;
+  }
+  @include mq(desktop) {
+    width: 198px;
+  }
 }
 
 .contacts__card-btn-second {
-    background: #ffffff;
-    color: #d41342;
-    border-radius: 22px;
-    font-family: var(--main-font);
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 1.31;
-    align-items: center;
-    text-align: center;
-    height: 44px;
-    border-color: transparent;
+  background: #ffffff;
+  color: #d41342;
+  border-radius: 22px;
+  font-family: var(--main-font);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.31;
+  align-items: center;
+  text-align: center;
+  height: 44px;
+  border-color: transparent;
 
-    @include mq(mobile-only) {
-        width: 162px;
-    }
-    @include mq(tablet) {
-        width: 174px;
-    }
-    @include mq(desktop) {
-        width: 180px;
-    }
+  @include mq(mobile-only) {
+    width: 162px;
+  }
+  @include mq(tablet) {
+    width: 174px;
+  }
+  @include mq(desktop) {
+    width: 180px;
+  }
 }
 .contacts__card-adress {
-    margin-top: 23px;
-    padding-bottom: 10px;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.33;
-    font-family: var(--main-font);
-    color: var(--text-black-color);
+  margin-top: 23px;
+  padding-bottom: 10px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.33;
+  font-family: var(--main-font);
+  color: var(--text-black-color);
 
-    @include mq(mobile-only) {
-        padding-top: 23px;
-    }
-    @include mq(tablet) {
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.33;
-        margin-top: 32px;
-        padding-top: 30px;
-    }
-    @include mq(desktop) {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.33;
-        margin-top: 32px;
-        padding-top: 32px;
-        padding-bottom: 14px;
-    }
+  @include mq(mobile-only) {
+    padding-top: 23px;
+  }
+  @include mq(tablet) {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.33;
+    margin-top: 32px;
+    padding-top: 30px;
+  }
+  @include mq(desktop) {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.33;
+    margin-top: 32px;
+    padding-top: 32px;
+    padding-bottom: 14px;
+  }
 }
 
 .contacts__card-txt {
-    padding-bottom: 50px;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.33;
+  padding-bottom: 50px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.33;
 
-    @include mq(tablet) {
-        padding-bottom: 60px;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.33;
-    }
-    @include mq(desktop) {
-        max-width: 243px;
-        padding-bottom: 64px;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.33;
-    }
+  @include mq(tablet) {
+    padding-bottom: 60px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.33;
+  }
+  @include mq(desktop) {
+    max-width: 243px;
+    padding-bottom: 64px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.33;
+  }
 }
 
 .contacts__card-daytime {
-    padding-bottom: 50px;
-    @include mq(tablet) {
-        padding-bottom: 60px;
-    }
-    @include mq(desktop) {
-        padding-bottom: 64px;
-    }
+  padding-bottom: 50px;
+  @include mq(tablet) {
+    padding-bottom: 60px;
+  }
+  @include mq(desktop) {
+    padding-bottom: 64px;
+  }
 }
 
 .contacts__card-day {
-    font-size: 12px;
-    width: 121px;
-    height: 22px;
+  font-size: 12px;
+  width: 121px;
+  height: 22px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.33;
+  font-family: var(--main-font);
+  color: var(--text-black-color);
+  @include mq(tablet) {
     font-weight: 500;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.33;
-    font-family: var(--main-font);
-    color: var(--text-black-color);
-    @include mq(tablet) {
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.33;
-        width: 141px;
-        height: 26px;
-    }
-    @include mq(desktop) {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.33;
-        width: 152px;
-        height: 30px;
-    }
+    width: 141px;
+    height: 26px;
+  }
+  @include mq(desktop) {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.33;
+    width: 152px;
+    height: 30px;
+  }
 }
 
 .contacts__card-time {
-    width: 163px;
-    height: 23px;
-    font-size: 12px;
-    color: #ffa5ba;
-    margin-bottom: 10px;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.33;
+  width: 163px;
+  height: 23px;
+  font-size: 12px;
+  color: #ffa5ba;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.33;
 
-    @include mq(tablet) {
-        margin-bottom: 16px;
-        font-size: 14px;
-    }
-    @include mq(desktop) {
-        margin-bottom: 15px;
-        font-size: 16px;
-    }
+  @include mq(tablet) {
+    margin-bottom: 16px;
+    font-size: 14px;
+  }
+  @include mq(desktop) {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
 }
 
 .contacts__card-tlml {
-    font-family: var(--main-font);
-    color: var(--text-grey-color);
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.33;
-    margin-bottom: 8px;
+  font-family: var(--main-font);
+  color: var(--text-grey-color);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.33;
+  margin-bottom: 8px;
 
-    @include mq(tablet) {
-        margin-bottom: 8px;
-        font-size: 14px;
-    }
-    @include mq(desktop) {
-        margin-bottom: 8px;
-        font-size: 16px;
-    }
+  @include mq(tablet) {
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+  @include mq(desktop) {
+    margin-bottom: 8px;
+    font-size: 16px;
+  }
 }
 
 .contacts__card-btn-onesvg {
-    display: inline-block;
-    stroke: #ffffff;
-    fill: #d41342;
-    margin-left: 8px;
-    @include mq(tablet) {
-        margin-left: 13.5px;
-    }
+  display: inline-block;
+  stroke: #ffffff;
+  fill: #d41342;
+  margin-left: 8px;
+  @include mq(tablet) {
+    margin-left: 13.5px;
+  }
 }
 .contacts__card-btn-secondsvg {
-    display: inline-block;
-    stroke: #d41342;
-    fill: #ffffff;
-    margin-left: 8px;
-    @include mq(tablet) {
-        margin-left: 13.5px;
-    }
-    @include mq(desktop) {
-    }
+  display: inline-block;
+  stroke: #d41342;
+  fill: #ffffff;
+  margin-left: 8px;
+  @include mq(tablet) {
+    margin-left: 13.5px;
+  }
+  @include mq(desktop) {
+  }
 }
 
 .contacts__card-btns {
-    display: block;
-    text-align: center;
-    margin: 0 auto;
-    width: 164px;
-    padding-bottom: 113px;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  width: 164px;
+  padding-bottom: 113px;
 
-    @include mq(tablet) {
-        display: inline-block;
-        width: 100%;
-        padding-bottom: 155px;
-    }
-    @include mq(desktop) {
-        display: inline-block;
-        width: 100%;
-        padding-bottom: 155px;
-    }
+  @include mq(tablet) {
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 155px;
+  }
+  @include mq(desktop) {
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 155px;
+  }
 }
 
 .contacts__card {
-    @include mq(desktop) {
-    }
+  @include mq(desktop) {
+  }
 }
 
 .contacts__card-cnt {
-    font-family: var(--main-font);
-    font-size: 12px;
-    width: 179px;
-    height: 37px;
-    display: grid;
+  font-family: var(--main-font);
+  font-size: 12px;
+  width: 179px;
+  height: 37px;
+  display: grid;
 
-    @include mq(tablet) {
-        width: 157px;
-        height: 48px;
-        font-size: 14px;
-    }
-    @include mq(desktop) {
-        width: 243px;
-        height: 50px;
-        font-size: 16px;
-    }
+  @include mq(tablet) {
+    width: 157px;
+    height: 48px;
+    font-size: 14px;
+  }
+  @include mq(desktop) {
+    width: 243px;
+    height: 50px;
+    font-size: 16px;
+  }
 }
 // ------------MODAL WINDOW
 
 .backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
-    background-color: rgba(212, 20, 67, 0.1);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(212, 20, 67, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .modal {
-    width: 500px;
-    height: 500px;
-    background-color: rgba(202, 75, 113, 0.514);
-    border-radius: 4px;
-    position: relative;
+  width: 500px;
+  height: 500px;
+  background-color: rgba(202, 75, 113, 0.514);
+  border-radius: 4px;
+  position: relative;
 }
 
 .is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .modal {
-    position: absolute;
-    background-color: #ffffff;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-    padding: 40px;
-    width: 320px;
-    height: 609px;
+  position: absolute;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 40px;
+  width: 320px;
+  height: 609px;
 }
 
 @include mq(tablet) {
-    .modal {
-        width: 450px;
-        height: 609px;
-    }
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
 }
 
 @include mq(desktop) {
-    .modal {
-        width: 528px;
-        height: 581px;
-    }
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 @include mq(mobile-only) {
-    .modal {
-        position: relative;
-    }
+  .modal {
+    position: relative;
+  }
 }
 
 @include mq(tablet) {
-    .modal {
-        min-width: 450px;
-        position: center;
-    }
+  .modal {
+    min-width: 450px;
+    position: center;
+  }
 }
 
 .modal__close-btn {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: transparent;
-    border: 1px solid var(--bgc-cart2);
-    position: absolute;
-    right: 8px;
-    top: 8px;
-    cursor: pointer;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid var(--bgc-cart2);
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  cursor: pointer;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal__close-btn:hover,
 .modal__close-btn:focus {
-    fill: var(--bgc-mob-menu);
+  fill: var(--bgc-mob-menu);
 }
 
 .close-btn {
-    display: inline;
-    fill: var(--bgc-hero-cart1);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
-    &:focus {
-        fill: var(--bgc-mob-menu);
-    }
+  display: inline;
+  fill: var(--bgc-hero-cart1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    fill: var(--bgc-mob-menu);
+  }
 }
 
 .modal__title {
-    font-weight: 700;
-    line-height: 1.13;
-    font-size: 20px;
-    text-align: center;
-    margin-bottom: 12px;
+  font-weight: 700;
+  line-height: 1.13;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 12px;
 }
 
 .modal__label {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.17;
-    display: block;
-    margin-bottom: 4px;
-    letter-spacing: 0.01em;
-    color: #757575;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  display: block;
+  margin-bottom: 4px;
+  letter-spacing: 0.01em;
+  color: #757575;
 }
 
 .modal__field {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .input-wrap {
-    position: relative;
+  position: relative;
 }
 
 .modal__input {
-    width: 100%;
-    height: 40px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    margin-bottom: 10px;
-    padding-left: 35px;
-    padding-top: 11px;
-    padding-bottom: 11px;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding-left: 35px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal__input:focus,
 .modal__input:hover {
-    outline: none;
-    border-color: var(--bgc-mob-menu);
+  outline: none;
+  border-color: var(--bgc-mob-menu);
 }
 
 .input-icon {
-    position: absolute;
-    left: 8px;
-    top: 50%;
-    transform: translateY(-75%);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-75%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-icon:hover,
 .input-icon:focus {
-    fill: var(--bgc-mob-menu);
+  fill: var(--bgc-mob-menu);
 }
 
 .modal__input:focus + .input-icon {
-    fill: var(--bgc-mob-menu);
+  fill: var(--bgc-mob-menu);
 }
 
 .modal__form-btn {
-    display: block;
-    margin-top: 30px;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.06em;
-    color: var(--bgc-quote-slider);
-    background-color: var(--bgc-mob-menu);
-    border-radius: 4px;
-    width: 240px;
-    height: 40px;
-    border: 1px, var(--bgc-quote-slider);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    cursor: pointer;
+  display: block;
+  margin-top: 30px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--bgc-quote-slider);
+  background-color: var(--bgc-mob-menu);
+  border-radius: 4px;
+  width: 240px;
+  height: 40px;
+  border: 1px, var(--bgc-quote-slider);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
-    .modal__form-btn {
-        margin-left: 60px;
-    }
+  .modal__form-btn {
+    margin-left: 60px;
+  }
 }
 
 @media (min-width: 1200px) {
-    .modal__form-btn {
-        margin-left: 100px;
-    }
+  .modal__form-btn {
+    margin-left: 100px;
+  }
 }
 
 .modal__form-btn:hover,
 .modal__form-btn:focus {
-    background-color: var(--akcent-red-title);
+  background-color: var(--akcent-red-title);
 }
 
 .modal__text {
-    width: 100%;
-    height: 120px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    margin-bottom: 20px;
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    resize: none;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-bottom: 20px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  resize: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal__text:focus {
-    outline: none;
-    border-color: var(--bgc-mob-menu);
+  outline: none;
+  border-color: var(--bgc-mob-menu);
 }
 
 .modal__text::placeholder {
-    color: rgba(117, 117, 117, 0.5);
-    font-size: 12px;
+  color: rgba(117, 117, 117, 0.5);
+  font-size: 12px;
 }
 
 // -----------MODAL MAP------------
 
 .map {
-    width: 80%;
-    min-width: 320px;
-    max-width: 480px;
-    background-color: rgba(202, 75, 113, 0.514);
-    border-radius: 4px;
-    position: relative;
+  width: 80%;
+  min-width: 320px;
+  max-width: 480px;
+  background-color: rgba(202, 75, 113, 0.514);
+  border-radius: 4px;
+  position: relative;
 
-    @include mq(tablet) {
-        min-width: 760px;
-        max-width: 800px;
-    }
-    @include mq(desktop) {
-        min-width: 760px;
-        max-width: 800px;
-    }
+  @include mq(tablet) {
+    min-width: 760px;
+    max-width: 800px;
+  }
+  @include mq(desktop) {
+    min-width: 760px;
+    max-width: 800px;
+  }
 }
 .map iframe {
-    width: 100%;
-    height: 100%;
-    border: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
 .contacts__card-btn-map {
-    background: #ffffff;
-    color: #d41342;
-    border-radius: 22px;
-    font-family: var(--main-font);
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 1.31;
-    align-items: center;
-    text-align: center;
-    height: 33px;
-    border-color: transparent;
-    margin-left: 2px;
+  background: #ffffff;
+  color: #d41342;
+  border-radius: 22px;
+  font-family: var(--main-font);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.31;
+  align-items: center;
+  text-align: center;
+  height: 33px;
+  border-color: transparent;
+  margin-left: 2px;
 
-    &:first-child {
-        margin-top: 2px;
-    }
+  &:first-child {
+    margin-top: 2px;
+  }
 
-    @include mq(mobile-only) {
-        width: 162px;
-    }
-    @include mq(tablet) {
-        width: 174px;
-    }
-    @include mq(desktop) {
-        width: 180px;
-    }
+  @include mq(mobile-only) {
+    width: 162px;
+  }
+  @include mq(tablet) {
+    width: 174px;
+  }
+  @include mq(desktop) {
+    width: 180px;
+  }
 }
 
 .modal__close-btnmap {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: var(--akcent2-light-title);
-    border: 1px solid transparent;
-    position: absolute;
-    right: 2px;
-    top: 2px;
-    cursor: pointer;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--akcent2-light-title);
+  border: 1px solid transparent;
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  cursor: pointer;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal__close-btnmap:hover,
 .modal__close-btnmap:focus {
-    fill: var(--bgc-mob-menu);
+  fill: var(--bgc-mob-menu);
 }
 
 .close-btnmap {
-    display: inline;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover,
-    &:focus {
-        fill: var(--bgc-mob-menu);
-    }
+  &:hover,
+  &:focus {
+    fill: var(--bgc-mob-menu);
+  }
 }
