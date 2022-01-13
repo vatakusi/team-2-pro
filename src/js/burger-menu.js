@@ -5,6 +5,7 @@
   const mobileLink1 = document.querySelector('[data-menu-link1]');
   const mobileLink2 = document.querySelector('[data-menu-link2]');
   const mobileLink3 = document.querySelector('[data-menu-link3]');
+  const wrapper = document.querySelector('[data-wrapper]');
 
   menuBtnRef.addEventListener('click', () => {
     const expanded = menuBtnRef.getAttribute('aria-expanded') === 'true' || false;
@@ -14,6 +15,7 @@
 
     document.body.classList.toggle('modal-open');
     mobileMenuRef.classList.toggle('active');
+    wrapper.classList.toggle('wrapper');
   });
 
   mobileLink0.addEventListener('click', removeMenu);
@@ -35,15 +37,18 @@
     menuBtnRef.classList.remove('active');
   });
   refs.closeBuyBtn.addEventListener('click', toggleModal);
+  refs.closeBuyBtn.addEventListener('click', removeMenu);
 
   function removeMenu() {
     mobileMenuRef.classList.remove('active');
     document.body.classList.remove('modal-open');
     menuBtnRef.classList.remove('active');
+    wrapper.classList.remove('wrapper');
   }
 
   function toggleModal() {
     refs.modalBuy.classList.toggle('is-hidden');
     document.body.classList.toggle('modal-open');
+    wrapper.classList.toggle('wrapper');
   }
 })();
