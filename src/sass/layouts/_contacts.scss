@@ -310,6 +310,11 @@
   margin-bottom: 10px;
   border-color: transparent;
 
+  &:focus,
+  &:hover {
+    background-color: #c7133e;
+  }
+
   @include mq(mobile-only) {
     width: 162px;
   }
@@ -334,6 +339,11 @@
   text-align: center;
   height: 44px;
   border-color: transparent;
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
 
   @include mq(mobile-only) {
     width: 162px;
@@ -504,7 +514,7 @@
   @include mq(desktop) {
     display: inline-block;
     width: 100%;
-    padding-bottom: 155px;
+    padding-bottom: 165px;
   }
 }
 

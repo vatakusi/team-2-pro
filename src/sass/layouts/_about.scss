@@ -30,8 +30,8 @@
 }
 .about {
   background-color: #fff5f6;
-  padding-bottom: 39px;
-  padding-top: 125px;
+  padding-bottom: 65px;
+  padding-top: 130px;
 
   @include mq(mobile) {
     background-image: url(../images/about-images/mobile-about-bg.png);
@@ -60,7 +60,8 @@
   }
 
   @include mq(desktop) {
-    /* margin-bottom: 39px; */
+    padding-top: 125px;
+    padding-bottom: 40px;
   }
 }
 
