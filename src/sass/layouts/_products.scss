@@ -18,6 +18,8 @@
 
   font-family: var(--title-font);
 
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
   @include font(18px, 1.17, 400);
 
   text-align: center;
@@ -33,6 +35,10 @@
     @include font(30px, 1.13, 400);
 
     letter-spacing: 0.04em;
+  }
+
+  &:hover {
+    transform: rotateX(360deg) scale(2);
   }
 }
 
@@ -220,8 +226,6 @@
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    margin-top: 15px;
-
     @include mq(tablet) {
       max-width: 220px;
       height: 226px;
@@ -285,8 +289,6 @@
   }
 }
 .products__text {
-  margin-bottom: 30px;
-
   padding-right: 40px;
   padding-left: 40px;
 
@@ -302,7 +304,6 @@
 
     padding-right: 11px;
     padding-left: 11px;
-    margin-bottom: 40px;
   }
 
   @include mq(desktop) {
@@ -310,7 +311,6 @@
 
     padding-right: 44px;
     padding-left: 44px;
-    margin-bottom: 62px;
   }
 }
 
@@ -324,7 +324,7 @@
 
 .products__label {
   position: absolute;
-  bottom: 55px;
+  bottom: 40px;
 
   width: 40px;
   height: 40px;
@@ -338,12 +338,8 @@
   transition: 0.5s all ease;
   transform: scale(0.8);
 
-  @include mq(tablet) {
-    bottom: 65px;
-  }
-
   @include mq(desktop) {
-    bottom: 100px;
+    bottom: 50px;
   }
 
   @include mq(retina) {
@@ -408,7 +404,7 @@
 .products__text--modal {
   padding-top: 77px;
   opacity: 0;
-
+  pointer-events: none;
   @include mq(tablet) {
     padding: 36px;
   }
