@@ -40,16 +40,18 @@
       @include mq(tablet) {
         display: flex;
         align-items: flex-end;
-        margin-top: 19px;
+        margin-top: 66px;
+        position: relative;
       }
 
       @include mq(desktop) {
-        margin-top: 56px;
+        margin-top: 112px;
         margin-left: -40px;
       }
     }
 
     &-img {
+        position: absolute;
       flex-shrink: 0;
 
       @include mq(desktop) {
@@ -65,7 +67,12 @@
       line-height: 1.5;
       color: var(--akcent2-light-title);
 
+      @include mq(tablet) {
+          margin-left: 120px;
+      }
+
       @include mq(desktop) {
+          margin-left: 220px;
         font-size: 14px;
         flex-basis: 200px;
       }
