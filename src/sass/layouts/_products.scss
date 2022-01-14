@@ -297,6 +297,8 @@
   letter-spacing: 0.04em;
   color: #ffffff;
 
+  pointer-events: none;
+
   @include mq(tablet) {
     @include font(14px, 1.78, 400);
 
